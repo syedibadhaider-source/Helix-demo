@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { LogoCloud } from "@/components/ui/logo-cloud-3";
+import { HeroSlider } from "./components/HeroSlider";
 import { HomeServiceCards } from "./components/HomeServiceCards";
 import { HomeTestimonials } from "./components/HomeTestimonials";
 import { HomeChatWidget } from "./components/HomeChatWidget";
@@ -104,15 +104,6 @@ const navItems: NavItem[] = [
       ],
     },
   },
-];
-
-const accreditationLogos = [
-  { alt: "FIA", label: "FIA", toneClassName: "logo-tone-red" },
-  { alt: "FPA", label: "FPA", toneClassName: "logo-tone-gold" },
-  { alt: "bafsa", label: "bafsa", toneClassName: "logo-tone-blue" },
-  { alt: "LPCB", label: "LPCB", toneClassName: "logo-tone-charcoal" },
-  { alt: "BAFE", label: "BAFE", toneClassName: "logo-tone-blue" },
-  { alt: "NSI Gold", label: "NSI Gold", toneClassName: "logo-tone-nsi" },
 ];
 
 type ServiceIconKind =
@@ -318,45 +309,12 @@ export default function Home() {
     <main className="site-shell">
       <SiteHeader />
 
-      <section className="hero" id="top">
-        <div className="hero-backdrop" />
-        <div className="hero-content">
-          <p className="eyebrow">Since 1992</p>
-          <h1>
-            <span>
-              Comprehensive <span className="heading-flip-word">Fire</span>
-            </span>
-            <span>
-              and <span className="heading-flip-word heading-flip-word-alt">Security</span> Solutions
-            </span>
-          </h1>
-          <p className="hero-copy">
-            <span>Helix Fire &amp; Security provide quality services that enable businesses</span>
-            <span>to protect their staff, visitors, sites, and assets from fire and intrusion.</span>
-          </p>
-          <div className="hero-actions">
-            <a className="button button-primary" href="/book-now">
-              Get in Touch Today
-            </a>
-            <a className="button button-secondary" href="#services">
-              Discover Fire Safety Services
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <div className="hero-spotlight" aria-hidden="true">
-          <div className="spotlight-ring">
-            <div className="spotlight-image" />
-          </div>
-        </div>
-      </section>
+      <HeroSlider />
 
       <section className="services-overview" id="services">
         <div className="services-intro">
           <h2>
-            Consultation to <span className="heading-flip-word heading-flip-word-alt">completion</span>,
-            all in <span className="heading-flip-word">house.</span>
+            Consultation to <span>completion</span>, all in <span>house.</span>
           </h2>
           <p>
             <span>
@@ -371,20 +329,6 @@ export default function Home() {
         </div>
 
         <HomeServiceCards />
-      </section>
-
-      <section className="accreditations-section" id="resources">
-        <div className="accreditations-shell">
-          <LogoCloud className="logo-marquee helix-logo-cloud" logos={accreditationLogos} aria-label="Accreditations" />
-          <div className="accreditations-divider accreditation-divider-bottom" aria-hidden="true" />
-        </div>
-
-        <div className="accreditation-band">
-          <a className="accreditation-button" href="#our-company">
-            See all accreditations
-            <span aria-hidden="true">↗</span>
-          </a>
-        </div>
       </section>
 
       <section className="primary-services-section" id="our-company">

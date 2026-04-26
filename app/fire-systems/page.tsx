@@ -9,127 +9,136 @@ export default function FireSystemsPage() {
     <>
       <SiteHeader />
 
-      <main className="site-shell">
-        <section className="service-category-bento">
-          <article className="service-bento-card service-category-copy-card">
-            <p className="service-page-eyebrow">{fireSystemsPage.eyebrow}</p>
-            <h1>{fireSystemsPage.title}</h1>
-            {fireSystemsPage.intro.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-            <div className="service-category-actions">
-              <a className="button button-primary" href="/book-now">
-                Arrange a Survey
-              </a>
-              <a className="button button-secondary" href="/book-now">
-                Request a Quote
-                <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </article>
-
-          <div className="service-bento-card service-category-image-card">
-            <Image
-              src={fireSystemsPage.image}
-              alt="Fire systems equipment and life safety devices"
-              fill
-              priority
-              sizes="100vw"
-            />
-          </div>
-
-          <article className="service-bento-card service-category-story-card">
-            <p className="service-page-eyebrow">Complete fire safety solutions</p>
-            <h2>{fireSystemsPage.sectionTitle}</h2>
-            {fireSystemsPage.sectionBody.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </article>
-
-          <article className="service-bento-card service-category-benefits-card">
-            <p className="service-page-eyebrow">We help you</p>
-            <h3>Practical outcomes for every building</h3>
-            <ul className="service-detail-bullet-grid">
-              {fireSystemsPage.benefits.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
+      <main className="info-page-shell">
+        {/* 1. Image at Top */}
+        <section className="clear-hero-image">
+          <Image 
+            src={fireSystemsPage.image} 
+            alt="Fire systems equipment" 
+            fill 
+            priority
+            className="info-main-image"
+          />
         </section>
 
-        <section className="service-page-content">
-          <section className="service-bento-card service-page-feature-block">
-            <div className="service-detail-card-head">
-              <p className="service-page-eyebrow">Fire services</p>
-              <h2>Our Fire Systems Services</h2>
-              <p>{fireSystemsPage.servicesIntro}</p>
-            </div>
-            <div className="fire-service-link-grid">
-              {fireSystemsPage.services.map((service) => (
-                <Link key={service.title} href={service.href} className="fire-service-link-card">
-                  <div className="fire-service-link-icon">
-                    <Image src={service.iconSrc} alt="" width={52} height={52} aria-hidden="true" />
-                  </div>
-                  <div>
-                    <h3>{service.title}</h3>
-                    <p>{service.text}</p>
-                  </div>
-                  <span aria-hidden="true">↗</span>
-                </Link>
+        {/* 2. Heading & 3. Text */}
+        <section className="clear-header-section">
+          <div className="info-container">
+            <p className="info-eyebrow">{fireSystemsPage.eyebrow}</p>
+            <h1>{fireSystemsPage.title}</h1>
+            <div className="clear-header-intro">
+              {fireSystemsPage.intro.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
               ))}
             </div>
-          </section>
-
-          <div className="service-detail-secondary-grid service-detail-secondary-grid-wide">
-            <article className="service-bento-card service-page-card">
-              <div className="service-detail-card-head">
-                <p className="service-page-eyebrow">Why Helix</p>
-                <h2>{fireSystemsPage.whyTitle}</h2>
-              </div>
-              <p>{fireSystemsPage.whyBody}</p>
-            </article>
-
-            <article className="service-bento-card service-page-card service-page-card-list">
-              <div className="service-detail-card-head">
-                <p className="service-page-eyebrow">What clients get</p>
-                <h3>Why clients choose us</h3>
-              </div>
-              <ul className="service-detail-bullet-grid">
-                {fireSystemsPage.whyPoints.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </article>
           </div>
+        </section>
 
-          <section className="service-detail-secondary-grid">
-            <article className="service-bento-card service-page-suitable">
-              <div className="service-detail-card-head">
-                <p className="service-page-eyebrow">Suitable for</p>
-                <h2>Suitable for</h2>
-              </div>
-              <div className="service-page-pill-grid">
-                {fireSystemsPage.suitableFor.map((item) => (
-                  <span key={item} className="service-page-pill">
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </article>
+        {/* 4. Cards in One Line (Services) */}
+        <section className="info-explore-section">
+          <div className="info-service-grid single-line">
+            {fireSystemsPage.services.map((service) => (
+              <Link key={service.title} href={service.href} className="info-service-card">
+                <div className="card-content">
+                  <div className="icon-container" style={{ 
+                    marginBottom: '32px', 
+                    width: '64px', 
+                    height: '64px', 
+                    background: 'var(--bg-soft)', 
+                    borderRadius: '16px', 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    justifyContent: 'center',
+                    border: '1px solid #f1f5f9'
+                  }}>
+                    <Image src={service.iconSrc} alt="" width={32} height={32} />
+                  </div>
+                  <h3>{service.title}</h3>
+                  <p>{service.text}</p>
+                </div>
+                <span className="card-arrow">↗</span>
+              </Link>
+            ))}
+          </div>
+        </section>
 
-            <article className="service-bento-card service-page-cta service-detail-cta-card">
-              <div className="service-detail-card-head">
-                <p className="service-page-eyebrow">Next step</p>
+        {/* 5. Banner (Overview / Highlights) */}
+        <section className="info-content-section">
+          <div className="info-container">
+            <div className="info-main-grid">
+              <article className="info-overview">
+                <div className="section-header">
+                  <span className="section-label">Complete Solutions</span>
+                  <h2>{fireSystemsPage.sectionTitle}</h2>
+                </div>
+                <div className="info-text-content">
+                  {fireSystemsPage.sectionBody.map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
+                </div>
+              </article>
+
+              <article className="info-highlights">
+                <div className="section-header">
+                  <span className="section-label">Our Benefits</span>
+                  <h3>Key building outcomes</h3>
+                </div>
+                <ul className="info-highlights-list">
+                  {fireSystemsPage.benefits.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="info-content-section" style={{ background: 'var(--bg-soft)', borderTop: '1px solid #f1f5f9', borderBottom: '1px solid #f1f5f9', margin: '0' }}>
+          <div className="info-container">
+            <div className="info-main-grid">
+              <article className="info-overview">
+                <div className="section-header">
+                  <span className="section-label" style={{ background: '#fff', color: 'var(--red)' }}>The Helix Advantage</span>
+                  <h2>{fireSystemsPage.whyTitle}</h2>
+                </div>
+                <div className="info-text-content">
+                   <p style={{ fontSize: '1.2rem', fontWeight: 500, color: 'var(--navy)' }}>{fireSystemsPage.whyBody}</p>
+                </div>
+              </article>
+
+              <article className="info-highlights">
+                <div className="section-header">
+                  <span className="section-label" style={{ background: '#fff' }}>Client Choice</span>
+                  <h3>Why clients choose us</h3>
+                </div>
+                <ul className="info-highlights-list">
+                  {fireSystemsPage.whyPoints.map((item) => (
+                    <li key={item} style={{ background: '#fff' }}>{item}</li>
+                  ))}
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. CTA Banner */}
+        <section className="info-footer-cta">
+          <div className="info-container">
+            <div className="info-cta-card">
+              <div className="info-cta-content">
                 <h2>{fireSystemsPage.ctaTitle}</h2>
+                <div className="info-cta-main">
+                  <p>{fireSystemsPage.ctaText}</p>
+                  <a className="button button-primary white" href="/book-now">
+                    {fireSystemsPage.ctaButton}
+                  </a>
+                </div>
               </div>
-              <p>{fireSystemsPage.ctaText}</p>
-              <a className="button button-primary" href="/book-now">
-                {fireSystemsPage.ctaButton}
-              </a>
-            </article>
-          </section>
+            </div>
+          </div>
         </section>
       </main>
+
 
       <SiteFooter />
     </>

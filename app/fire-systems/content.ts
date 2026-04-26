@@ -21,7 +21,7 @@ export const fireSystemsPage = {
   title: "Fire Systems",
   eyebrow: "Complete fire safety solutions",
   intro: [
-    "Fire safety is one of the most important responsibilities for any property owner, landlord, business or facilities manager. At DM Fire & Security, we provide complete fire system solutions designed to protect people, property and day to day operations.",
+    "Fire safety is one of the most important responsibilities for any property owner, landlord, business or facilities manager. At Helix, we provide complete fire system solutions designed to protect people, property and day to day operations.",
     "From fire alarm installation and emergency lighting to extinguishers, smoke ventilation, nurse call systems and compliance certification, our team delivers professional fire safety services from initial survey through installation, testing, maintenance and documentation.",
     "We work with residential properties, commercial buildings, offices, retail premises, care environments, apartment blocks, schools, warehouses and managed sites.",
   ],
@@ -85,9 +85,9 @@ export const fireSystemsPage = {
       iconSrc: "/service-icons/dry-wet-risers.svg",
     },
   ],
-  whyTitle: "Why choose DM Fire & Security?",
+  whyTitle: "Why choose Helix?",
   whyBody:
-    "DM Fire & Security provides a complete service from consultation to completion. Our team focuses on safe installation, clear communication, reliable workmanship and long term support.",
+    "Helix provides a complete service from consultation to completion. Our team focuses on safe installation, clear communication, reliable workmanship and long term support.",
   whyPoints: [
     "Professional site surveys",
     "Clear recommendations",
@@ -111,7 +111,7 @@ export const fireSystemsPage = {
   ],
   ctaTitle: "Need a reliable fire system for your property?",
   ctaText:
-    "Contact DM Fire & Security today to arrange a survey, request a quote or discuss your fire safety requirements.",
+    "Contact Helix today to arrange a survey, request a quote or discuss your fire safety requirements.",
   ctaButton: "Arrange a Fire Survey",
 } as const;
 
@@ -121,7 +121,7 @@ export const fireDetailPages: FireDetailPage[] = [
     title: "Fire Alarm Systems",
     eyebrow: "Early warning & dependable detection",
     intro: [
-      "A reliable fire alarm system is essential for protecting people, property and business operations. At DM Fire & Security, we design, install and maintain fire alarm systems that provide early warning, dependable performance and compliance support for a wide range of buildings.",
+      "A reliable fire alarm system is essential for protecting people, property and business operations. At Helix, we design, install and maintain fire alarm systems that provide early warning, dependable performance and compliance support for a wide range of buildings.",
       "Whether you require a new installation, system upgrade, repair, commissioning or scheduled maintenance, our team can provide a complete fire alarm service tailored to your property.",
     ],
     leadImage: "/fire-systems-card.png",
@@ -163,7 +163,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Landlords and property managers",
     ],
     ctaTitle: "Protect your property with a professionally installed fire alarm system.",
-    ctaText: "Contact DM Fire & Security today to arrange a fire alarm survey or request a quote.",
+    ctaText: "Contact Helix today to arrange a fire alarm survey or request a quote.",
     ctaButton: "Request a Fire Alarm Survey",
   },
   {
@@ -172,7 +172,7 @@ export const fireDetailPages: FireDetailPage[] = [
     eyebrow: "Correct extinguishers for the right risk",
     intro: [
       "Fire extinguishers are a vital part of any fire safety strategy. They provide immediate protection in the early stages of a fire and help support the safety of occupants, staff and visitors.",
-      "DM Fire & Security supplies, installs and maintains fire extinguishers for residential, commercial and managed properties, ensuring the correct extinguisher types are provided for the risks within your building.",
+      "Helix supplies, installs and maintains fire extinguishers for residential, commercial and managed properties, ensuring the correct extinguisher types are provided for the risks within your building.",
     ],
     leadImage: "/fire-systems-card.png",
     leadAlt: "Fire extinguisher and life safety equipment",
@@ -213,7 +213,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Landlords and facilities managers",
     ],
     ctaTitle: "Need extinguishers supplied, installed or serviced?",
-    ctaText: "Contact DM Fire & Security today to arrange professional fire extinguisher support.",
+    ctaText: "Contact Helix today to arrange professional fire extinguisher support.",
     ctaButton: "Book Extinguisher Support",
   },
   {
@@ -222,7 +222,7 @@ export const fireDetailPages: FireDetailPage[] = [
     eyebrow: "Safe evacuation when it matters most",
     intro: [
       "Emergency lighting is essential for helping people evacuate safely during a power failure, fire or emergency situation. It ensures escape routes, exits, stairwells and key safety areas remain visible when normal lighting fails.",
-      "DM Fire & Security designs, installs, tests and maintains emergency lighting systems for residential, commercial and managed properties.",
+      "Helix designs, installs, tests and maintains emergency lighting systems for residential, commercial and managed properties.",
     ],
     leadImage: "/fire-systems-card.png",
     leadAlt: "Emergency exit lighting and safety equipment",
@@ -267,7 +267,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Hospitality and public access buildings",
     ],
     ctaTitle: "Keep your evacuation routes safe and compliant.",
-    ctaText: "Contact DM Fire & Security today to arrange emergency lighting installation, testing or maintenance.",
+    ctaText: "Contact Helix today to arrange emergency lighting installation, testing or maintenance.",
     ctaButton: "Arrange Emergency Lighting Support",
   },
   {
@@ -276,7 +276,7 @@ export const fireDetailPages: FireDetailPage[] = [
     eyebrow: "Smoke control for safer escape routes",
     intro: [
       "Automatic Opening Ventilation systems, often known as AOV systems, are designed to help control smoke movement during a fire. These systems support safer evacuation by helping keep escape routes clearer and reducing smoke build up in key areas.",
-      "DM Fire & Security designs, installs and maintains AOV systems for residential, commercial and managed buildings.",
+      "Helix designs, installs and maintains AOV systems for residential, commercial and managed buildings.",
     ],
     leadImage: "/fire-systems-card.png",
     leadAlt: "Ventilation and smoke control systems",
@@ -319,7 +319,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Buildings with smoke shaft systems",
     ],
     ctaTitle: "Need a reliable AOV system installed or maintained?",
-    ctaText: "Contact DM Fire & Security today to discuss your smoke ventilation requirements.",
+    ctaText: "Contact Helix today to discuss your smoke ventilation requirements.",
     ctaButton: "Discuss AOV Requirements",
   },
   {
@@ -328,7 +328,7 @@ export const fireDetailPages: FireDetailPage[] = [
     eyebrow: "Fast communication in safety critical environments",
     intro: [
       "Nurse call and emergency communication systems help ensure assistance can be requested quickly when it is needed most. These systems are especially important in care environments, assisted living facilities, healthcare settings and buildings where vulnerable occupants may require support.",
-      "DM Fire & Security designs, installs and maintains reliable emergency communication systems for residential and commercial properties.",
+      "Helix designs, installs and maintains reliable emergency communication systems for residential and commercial properties.",
     ],
     leadImage: "/security-card.png",
     leadAlt: "Emergency communication and control systems",
@@ -374,7 +374,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Managed properties",
     ],
     ctaTitle: "Improve safety and communication across your property.",
-    ctaText: "Contact DM Fire & Security today to arrange a nurse call or emergency communication system survey.",
+    ctaText: "Contact Helix today to arrange a nurse call or emergency communication system survey.",
     ctaButton: "Arrange a Communication Survey",
   },
   {
@@ -383,7 +383,7 @@ export const fireDetailPages: FireDetailPage[] = [
     eyebrow: "Clear audio across your property",
     intro: [
       "Clear communication is essential in many buildings, especially in commercial, public access and managed environments. PA and speaker systems allow announcements, alerts, background audio and important messages to be delivered clearly across your property.",
-      "DM Fire & Security designs, installs and maintains PA and speaker systems for residential, commercial and public environments.",
+      "Helix designs, installs and maintains PA and speaker systems for residential, commercial and public environments.",
     ],
     leadImage: "/security-card.png",
     leadAlt: "PA system and speaker controls",
@@ -427,7 +427,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Public access buildings",
     ],
     ctaTitle: "Need clear and reliable audio across your property?",
-    ctaText: "Contact DM Fire & Security today to discuss PA and speaker system installation.",
+    ctaText: "Contact Helix today to discuss PA and speaker system installation.",
     ctaButton: "Discuss PA & Speaker Systems",
   },
   {
@@ -435,7 +435,7 @@ export const fireDetailPages: FireDetailPage[] = [
     title: "Certification & Compliance",
     eyebrow: "Clear documentation for safer buildings",
     intro: [
-      "Keeping your fire, electrical and safety systems properly tested, certified and documented is essential for responsible property management. DM Fire & Security provides professional certification and compliance support for residential, commercial and managed properties.",
+      "Keeping your fire, electrical and safety systems properly tested, certified and documented is essential for responsible property management. Helix provides professional certification and compliance support for residential, commercial and managed properties.",
       "We help landlords, businesses, facilities managers and property owners maintain clear records and confidence in their safety systems.",
     ],
     leadImage: "/fire-systems-card.png",
@@ -480,7 +480,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Managed property portfolios",
     ],
     ctaTitle: "Need your systems tested, certified or documented?",
-    ctaText: "Contact DM Fire & Security today to arrange certification and compliance support.",
+    ctaText: "Contact Helix today to arrange certification and compliance support.",
     ctaButton: "Request Compliance Support",
   },
 ];

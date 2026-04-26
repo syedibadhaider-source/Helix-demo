@@ -23,13 +23,24 @@ const serviceCards: ServiceCardItem[] = [
     href: "/fire-systems",
   },
   {
-    title: "Security",
+    title: "Security Systems",
     bodyLines: [
-      "Our security offering includes CCTV, alarm monitoring, intruder alarms,",
+      "We provide CCTV, alarm monitoring, intruder alarms,",
       "access control, and joined-up protection for modern facilities.",
     ],
     imageClassName: "security-card-image",
     bodyClassName: "service-card-body-security",
+    href: "/security",
+  },
+  {
+    title: "Compliance",
+    bodyLines: [
+      "We support certification, reporting, maintenance records,",
+      "and practical compliance oversight across your property portfolio.",
+    ],
+    imageClassName: "compliance-card-image",
+    bodyClassName: "service-card-body-compliance",
+    href: "/compliance",
   },
 ];
 

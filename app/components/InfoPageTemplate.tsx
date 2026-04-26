@@ -4,118 +4,103 @@ import type { InfoPageData } from "../content-pages/content";
 
 export function InfoPageTemplate({ page }: { page: InfoPageData }) {
   return (
-    <main className="site-shell">
-      <section className="info-page-bento">
-        <article className="service-bento-card info-page-copy-card">
-          <p className="service-page-eyebrow">{page.eyebrow}</p>
-          <h1>{page.title}</h1>
-          {page.intro.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-          <div className="service-page-actions">
-            <a className="button button-primary" href="/book-now">
-              Book Now
-            </a>
-            <Link className="button button-secondary" href="/">
-              Back to Homepage
-              <span aria-hidden="true">↗</span>
-            </Link>
-          </div>
-        </article>
-
-        <div className="service-bento-card info-page-image-card">
-          <Image src={page.image} alt={page.imageAlt} fill sizes="(max-width: 1024px) 100vw, 42vw" />
-        </div>
-
-        <div className="info-page-metrics-grid">
-          {page.metrics.map((metric) => (
-            <article key={metric.label} className="service-bento-card info-page-metric-card">
-              <strong>{metric.value}</strong>
-              <span>{metric.label}</span>
-            </article>
-          ))}
-        </div>
-
-        <article className="service-bento-card info-page-overview-card">
-          <div className="service-detail-card-head">
-            <p className="service-page-eyebrow">Overview</p>
-            <h2>{page.overviewTitle}</h2>
-          </div>
-          {page.overview.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
-          ))}
-        </article>
-
-        <article className="service-bento-card info-page-highlights-card">
-          <div className="service-detail-card-head">
-            <p className="service-page-eyebrow">Highlights</p>
-            <h3>{page.highlightsTitle}</h3>
-          </div>
-          <ul className="service-detail-bullet-grid">
-            {page.highlights.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </article>
+    <main className="info-page-shell">
+      {/* 1. Image at Top */}
+      <section className="clear-hero-image">
+        <Image 
+          src={page.image} 
+          alt={page.imageAlt} 
+          fill 
+          priority
+          className="info-main-image"
+        />
       </section>
 
-      <section className="service-page-content service-detail-content">
-        <section className="service-bento-card service-page-feature-block">
-          <div className="service-detail-card-head">
-            <p className="service-page-eyebrow">Explore</p>
-            <h2>{page.gridTitle}</h2>
-            <p>{page.gridIntro}</p>
+      {/* 2. Heading & 3. Text */}
+      <section className="clear-header-section">
+        <div className="info-container">
+          <p className="info-eyebrow">{page.eyebrow}</p>
+          <h1>{page.title}</h1>
+          <div className="clear-header-intro">
+            {page.intro.map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
           </div>
+        </div>
+      </section>
 
-          <div className="info-page-grid-links">
-            {page.gridItems.map((item) =>
-              item.href ? (
-                <Link key={item.title} href={item.href} className="info-page-grid-card">
-                  <div>
-                    <h3>{item.title}</h3>
-                    <p>{item.text}</p>
-                  </div>
-                  <span aria-hidden="true">↗</span>
-                </Link>
-              ) : (
-                <article key={item.title} className="info-page-grid-card static">
-                  <div>
-                    <h3>{item.title}</h3>
-                    <p>{item.text}</p>
-                  </div>
-                </article>
-              )
-            )}
+      {/* 4. Cards in One Line */}
+      <section className="info-explore-section">
+        <div className="info-service-grid single-line">
+          {page.gridItems.map((item) =>
+            item.href ? (
+              <Link key={item.title} href={item.href} className="info-service-card">
+                <div className="card-content">
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+                <span className="card-arrow">↗</span>
+              </Link>
+            ) : (
+              <article key={item.title} className="info-service-card static">
+                <div className="card-content">
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </article>
+            )
+          )}
+        </div>
+      </section>
+
+      {/* 5. Banner (Overview / Highlights) */}
+      <section className="info-content-section">
+        <div className="info-container">
+          <div className="info-main-grid">
+            <article className="info-overview">
+              <div className="section-header">
+                <span className="section-label">Overview</span>
+                <h2>{page.overviewTitle}</h2>
+              </div>
+              <div className="info-text-content">
+                {page.overview.map((paragraph, i) => (
+                  <p key={i}>{paragraph}</p>
+                ))}
+              </div>
+            </article>
+
+            <article className="info-highlights">
+              <div className="section-header">
+                <span className="section-label">Highlights</span>
+                <h3>{page.highlightsTitle}</h3>
+              </div>
+              <ul className="info-highlights-list">
+                {page.highlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="service-detail-secondary-grid">
-          <article className="service-bento-card service-page-suitable">
-            <div className="service-detail-card-head">
-              <p className="service-page-eyebrow">Best fit</p>
+      {/* 6. CTA Banner */}
+      <section className="info-footer-cta">
+        <div className="info-container">
+          <div className="info-cta-card">
+            <div className="info-cta-content">
               <h2>{page.fitTitle}</h2>
+              <div className="info-cta-main">
+                <p>{page.ctaText}</p>
+                <a className="button button-primary white" href="/book-now">
+                  {page.ctaButton}
+                </a>
+              </div>
             </div>
-            <div className="service-page-pill-grid">
-              {page.fitItems.map((item) => (
-                <span key={item} className="service-page-pill">
-                  {item}
-                </span>
-              ))}
-            </div>
-          </article>
-
-          <article className="service-bento-card service-page-cta service-detail-cta-card">
-            <div className="service-detail-card-head">
-              <p className="service-page-eyebrow">Next step</p>
-              <h2>{page.ctaTitle}</h2>
-            </div>
-            <p>{page.ctaText}</p>
-            <a className="button button-primary" href="/book-now">
-              {page.ctaButton}
-            </a>
-          </article>
-        </section>
+          </div>
+        </div>
       </section>
     </main>
   );
 }
+

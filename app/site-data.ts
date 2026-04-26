@@ -111,7 +111,7 @@ export const navItems: NavItem[] = [
     },
   },
   {
-    label: "Security",
+    label: "Security Systems",
     href: "/security",
     menu: {
       type: "list",
@@ -123,39 +123,7 @@ export const navItems: NavItem[] = [
       ],
     },
   },
-  {
-    label: "Resources",
-    href: "/resources",
-    menu: {
-      type: "list",
-      links: [
-        { label: "Your Responsibilities", href: "/resources/your-responsibilities" },
-        { label: "Case Studies", href: "/resources/case-studies" },
-        { label: "Brochures", href: "/resources/brochures" },
-        { label: "Downloads", href: "/resources/downloads" },
-        { label: "News", href: "/resources/news" },
-        { label: "FAQs", href: "/resources/faqs" },
-      ],
-    },
-  },
-  {
-    label: "Our Company",
-    href: "/our-company",
-    menu: {
-      type: "list",
-      links: [
-        { label: "Policies", href: "/our-company/policies" },
-        { label: "Our Accreditations & Memberships", href: "/our-company/accreditations-memberships" },
-        { label: "Frameworks", href: "/our-company/frameworks" },
-        { label: "Videos", href: "/our-company/videos" },
-        { label: "Careers", href: "/about/careers" },
-        { label: "Acquisitions", href: "/our-company/acquisitions" },
-        { label: "Alarm Receiving Centre (ARC)", href: "/our-company/alarm-receiving-centre" },
-        { label: "Fire and Security Training Academy", href: "/our-company/training-academy" },
-        { label: "Consultancy", href: "/our-company/consultancy" },
-      ],
-    },
-  },
+  { label: "Compliance", href: "/compliance" },
 ];
 
 export const footerColumns: FooterColumn[] = [

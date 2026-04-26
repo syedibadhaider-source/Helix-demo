@@ -35,6 +35,74 @@ function makePage(data: InfoPageData): InfoPageData {
   return data;
 }
 
+export const compliancePage: InfoPageData = makePage({
+  slug: "compliance",
+  title: "Compliance",
+  eyebrow: "Documentation, reporting and accountability",
+  intro: [
+    "Helix supports property owners, landlords, facilities teams and managed portfolios with practical compliance support across fire safety, security systems and ongoing service records.",
+    "Our role is to help clients keep systems tested, documented and easier to manage, with clear reporting, planned maintenance and one accountable team behind the work.",
+  ],
+  image: "/compliance-service-card.png",
+  imageAlt: "Helix engineer and vehicle supporting compliance-led building services",
+  metrics: [
+    { value: "Clear", label: "Documentation and reporting" },
+    { value: "Planned", label: "Testing and maintenance support" },
+    { value: "Joined-up", label: "Fire and security oversight" },
+  ],
+  overviewTitle: "Compliance support built around real building responsibilities",
+  overview: [
+    "Compliance is not just about installing systems. It is about ensuring they remain tested, maintained and documented in a way that supports safe operation and easier property management.",
+    "Helix helps clients stay organised with practical service records, recurring maintenance support and a clearer view of what has been completed, what needs attention and what should happen next.",
+  ],
+  highlightsTitle: "What our compliance support can include",
+  highlights: [
+    "Fire alarm testing and maintenance records",
+    "Emergency lighting checks and certification support",
+    "Fire extinguisher servicing documentation",
+    "Security system servicing and inspection records",
+    "Planned maintenance scheduling across sites",
+    "Clear reporting for landlords, facilities managers and property teams",
+  ],
+  gridTitle: "Explore compliance-led support",
+  gridIntro:
+    "These pages and services help clients stay organised, reduce gaps in service oversight and keep fire and security responsibilities easier to manage over time.",
+  gridItems: [
+    {
+      title: "Certification & Compliance",
+      text: "Testing, certificates, service records and ongoing support for life-safety systems.",
+      href: "/fire-systems/certification-compliance",
+    },
+    {
+      title: "Your Responsibilities",
+      text: "Understand the core responsibilities that sit behind safer buildings and better record keeping.",
+      href: "/resources/your-responsibilities",
+    },
+    {
+      title: "How We Work",
+      text: "See how Helix delivers surveys, installations, maintenance and reporting through one accountable team.",
+      href: "/about/how-we-work",
+    },
+    {
+      title: "Integrated Support",
+      text: "Bring fire systems, security and compliance conversations into one clearer service model.",
+    },
+  ],
+  fitTitle: "Best suited to",
+  fitItems: [
+    "Landlords and managing agents",
+    "Facilities and estates teams",
+    "Commercial multi-site portfolios",
+    "Residential blocks and communal buildings",
+    "Care, education and public-use sites",
+    "Clients needing clearer maintenance records",
+  ],
+  ctaTitle: "Need clearer support around compliance and documentation?",
+  ctaText:
+    "Talk to Helix about your current responsibilities, reporting gaps or maintenance planning and we will help shape the right next step.",
+  ctaButton: "Book a Compliance Review",
+});
+
 export const aboutCollection: SectionCollection = {
   section: "about",
   landing: makePage({

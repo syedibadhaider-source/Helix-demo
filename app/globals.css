@@ -13,6 +13,7 @@
   --card-copy: rgba(255, 255, 255, 0.84);
   --shadow: 0 24px 60px rgba(10, 17, 20, 0.18);
   --page-gutter: clamp(28px, 4.8vw, 76px);
+  --font-heading-stack: var(--font-heading), "Montserrat", sans-serif;
   --font-body-stack: var(--font-body), "Poppins", sans-serif;
   --font-ui: var(--font-body), "Poppins", sans-serif;
   --heading-tracking: -0.015em;
@@ -56,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   letter-spacing: var(--heading-tracking);
 }
 
@@ -87,7 +88,7 @@ a {
 .fire-alarm-premium a[class*="font-extrabold"],
 .fire-alarm-premium p[class*="uppercase"],
 .fire-alarm-premium span[class*="font-extrabold"] {
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
 }
 
 .fire-alarm-premium p,
@@ -211,7 +212,7 @@ a {
   display: block;
   margin: 0;
   color: inherit;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 0.88rem;
   line-height: 1.08;
   font-weight: 700;
@@ -252,7 +253,7 @@ a {
   border-radius: 8px;
   background: #edf1ef;
   color: #273034;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 0.78rem;
   font-weight: 700;
 }
@@ -286,7 +287,7 @@ a {
 .nav-list-links a {
   display: block;
   color: #2a3135;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-weight: 700;
   white-space: normal;
   overflow-wrap: anywhere;
@@ -333,7 +334,7 @@ a {
   border-radius: 8px;
   font-weight: 700;
   transition: transform 160ms ease, box-shadow 160ms ease;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
 }
 
 .header-actions {
@@ -353,7 +354,7 @@ a {
   background: #1ca34a;
   color: #ffffff;
   white-space: nowrap;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 0.82rem;
   font-weight: 700;
   transition: transform 160ms ease, box-shadow 160ms ease;
@@ -654,7 +655,7 @@ a {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: none;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   letter-spacing: 0.01em;
 }
 
@@ -1397,7 +1398,7 @@ a {
 .value-mosaic-kicker {
   margin: 0 0 14px;
   color: #ffffff;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 1rem;
   font-weight: 700;
 }
@@ -1496,7 +1497,7 @@ a {
 
 .mosaic-list strong {
   color: #d7332d;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: clamp(1.7rem, 2.5vw, 2.45rem);
   line-height: 0.98;
   font-weight: 700;
@@ -1606,7 +1607,7 @@ a {
   color: #25303a;
   background: #edf1ef;
   text-align: center;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 0.72rem;
   line-height: 1.28;
   font-weight: 700;
@@ -1649,7 +1650,7 @@ a {
   max-width: 13ch;
   margin: 18px 0 0;
   color: #2f363a;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: clamp(1.35rem, 1.9vw, 2rem);
   line-height: 1.18;
   font-weight: 700;
@@ -1766,7 +1767,7 @@ a {
 .testimonial-company {
   margin: 0 0 18px;
   color: #737b7f;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 1.6rem;
   line-height: 0.96;
   font-weight: 700;
@@ -1899,7 +1900,7 @@ a {
   border-radius: 4px;
   background: #3b7ec7;
   color: #ffffff;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 1.15rem;
   font-weight: 700;
 }
@@ -2776,7 +2777,7 @@ a {
 
 .contact-quick-card strong {
   color: #ffffff;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 1rem;
   font-weight: 700;
 }
@@ -2908,7 +2909,7 @@ a {
   color: #ffffff;
   box-shadow: 0 18px 38px rgba(10, 17, 20, 0.22);
   cursor: pointer;
-  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+  font-family: var(--font-heading-stack);
   font-size: 0.98rem;
   font-weight: 700;
   display: inline-flex;

@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --bg: #ffffff;
   --text: #1e2528;
@@ -76,6 +78,23 @@ a {
   text-decoration: none;
 }
 
+.fire-alarm-premium h1,
+.fire-alarm-premium h2,
+.fire-alarm-premium h3,
+.fire-alarm-premium nav,
+.fire-alarm-premium button,
+.fire-alarm-premium a[class*="font-bold"],
+.fire-alarm-premium a[class*="font-extrabold"],
+.fire-alarm-premium p[class*="uppercase"],
+.fire-alarm-premium span[class*="font-extrabold"] {
+  font-family: var(--font-heading), var(--font-body), "Poppins", sans-serif;
+}
+
+.fire-alarm-premium p,
+.fire-alarm-premium li {
+  font-family: var(--font-body-stack);
+}
+
 .site-shell {
   overflow-x: hidden;
 }
@@ -145,7 +164,8 @@ a {
 }
 
 .has-menu:hover .nav-dropdown,
-.has-menu:focus-within .nav-dropdown {
+.has-menu:focus-within .nav-dropdown,
+.has-menu.menu-open .nav-dropdown {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -3169,13 +3189,15 @@ a {
 
   .has-menu:hover .nav-dropdown,
   .has-menu:focus-within .nav-dropdown,
+  .has-menu.menu-open .nav-dropdown,
   .nav-item:nth-child(5):hover .nav-dropdown-list,
   .nav-item:nth-child(5):focus-within .nav-dropdown-list {
     transform: none;
   }
 
   .has-menu:hover .nav-dropdown,
-  .has-menu:focus-within .nav-dropdown {
+  .has-menu:focus-within .nav-dropdown,
+  .has-menu.menu-open .nav-dropdown {
     display: block;
   }
 

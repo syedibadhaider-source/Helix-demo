@@ -1,8 +1,13 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { navItems } from "../site-data";
 
 export function SiteHeader() {
+  const [activeMenu, setActiveMenu] = useState<string | null>(null);
+
   return (
     <header className="site-header">
       <Link className="brand-mark" href="/" aria-label="Helix home">
@@ -11,8 +16,20 @@ export function SiteHeader() {
 
       <nav className="site-nav" aria-label="Primary">
         {navItems.map((item) => (
-          <div key={item.label} className={`nav-item${item.menu ? " has-menu" : ""}`}>
-            <Link href={item.href}>
+          <div
+            key={item.label}
+            className={`nav-item${item.menu ? " has-menu" : ""}${activeMenu === item.label ? " menu-open" : ""}`}
+            onMouseLeave={() => setActiveMenu(null)}
+          >
+            <Link
+              href={item.href}
+              aria-expanded={item.menu ? activeMenu === item.label : undefined}
+              onClick={(event) => {
+                if (!item.menu) return;
+                event.preventDefault();
+                setActiveMenu((current) => (current === item.label ? null : item.label));
+              }}
+            >
               {item.label}
               {item.menu ? <span aria-hidden="true">⌄</span> : null}
             </Link>

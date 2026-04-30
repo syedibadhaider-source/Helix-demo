@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Poppins } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -9,10 +8,10 @@ const poppins = Poppins({
   variable: "--font-body",
 });
 
-const rocGrotesk = localFont({
-  src: "../public/fonts/95844bad620d641ae275f5757f5b932d.woff2",
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
   variable: "--font-heading",
-  weight: "700",
   display: "swap",
 });
 
@@ -28,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${poppins.variable} ${rocGrotesk.variable}`}>
+      <body className={`${poppins.className} ${poppins.variable} ${montserrat.variable}`}>
         {children}
       </body>
     </html>

@@ -409,8 +409,8 @@ export const securityCollection: SectionCollection = {
         "CCTV helps clients monitor entrances, shared spaces, circulation routes and high-risk areas with better visibility and clearer incident review.",
         "Helix designs, installs and maintains CCTV systems for buildings that need dependable coverage and straightforward day-to-day management.",
       ],
-      image: "/security-card.png",
-      imageAlt: "CCTV camera and security equipment",
+      image: "/cctv-systems-service.png",
+      imageAlt: "CCTV camera and monitoring screens covering a commercial site",
       metrics: [
         { value: "Live view", label: "Better visibility" },
         { value: "Playback", label: "Review incidents" },
@@ -452,8 +452,8 @@ export const securityCollection: SectionCollection = {
         "Monitoring adds an extra layer of confidence by helping ensure alarm activations are not missed when a site is empty or operating with limited on-site presence.",
         "Helix supports monitored intruder alarm setups that improve awareness and response planning across managed buildings.",
       ],
-      image: "/security-card.png",
-      imageAlt: "Alarm keypad with security monitoring devices",
+      image: "/intruder-alarm-monitoring-service.png",
+      imageAlt: "Intruder alarm monitoring workstation with alarm event escalation screens",
       metrics: [
         { value: "Always on", label: "Out-of-hours awareness" },
         { value: "Escalation", label: "Defined response routes" },
@@ -493,8 +493,8 @@ export const securityCollection: SectionCollection = {
         "Intruder alarm systems help protect buildings during unoccupied periods and provide reassurance that access events or security breaches will trigger a clear response.",
         "Helix installs and maintains intruder alarm systems designed around the access patterns, risk profile and occupancy of each property.",
       ],
-      image: "/security-card.png",
-      imageAlt: "Intruder alarm keypad and access devices",
+      image: "/intruder-alarm-service.png",
+      imageAlt: "Intruder alarm keypad motion detector and mobile app showing an armed system",
       metrics: [
         { value: "Detect", label: "Movement and entry events" },
         { value: "Zone", label: "Configured around the building" },

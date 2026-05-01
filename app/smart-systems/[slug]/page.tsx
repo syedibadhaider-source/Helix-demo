@@ -7,7 +7,7 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-const group = getServiceGroup("fire");
+const group = getServiceGroup("smart");
 
 export function generateStaticParams() {
   return group.pages.map((page) => ({ slug: page.slug }));
@@ -15,19 +15,19 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = getServicePage("fire", slug);
+  const page = getServicePage("smart", slug);
 
-  if (!page) return { title: "Fire Systems | Helix" };
+  if (!page) return { title: "Smart Systems | Helix" };
 
   return {
-    title: `${page.title} | Fire Systems | Helix`,
+    title: `${page.title} | Smart Systems | Helix`,
     description: page.intro[0],
   };
 }
 
-export default async function FireSystemsDetailPage({ params }: PageProps) {
+export default async function SmartSystemsDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const page = getServicePage("fire", slug);
+  const page = getServicePage("smart", slug);
 
   if (!page) notFound();
 

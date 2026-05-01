@@ -80,34 +80,17 @@ export const fireServicePages = [
 ] as const;
 
 export const navItems: NavItem[] = [
-  { label: "About", href: "/about" },
   {
     label: "Fire Systems",
     href: "/fire-systems",
     menu: {
-      type: "fire",
-      featureCards: [
-        {
-          title: "Fire Alarm Systems",
-          text: "Early warning systems for residential and commercial premises.",
-          href: "/fire-systems/fire-alarm-systems",
-          active: true,
-        },
-        {
-          title: "Fire Extinguishers",
-          text: "Supply, placement, servicing and compliance support.",
-          href: "/fire-systems/fire-extinguishers",
-        },
-        {
-          title: "Emergency Lighting",
-          text: "Escape route, open area and task lighting for safer evacuation.",
-          href: "/fire-systems/emergency-lighting",
-        },
+      type: "list",
+      links: [
+        { label: "Fire Alarm Systems", href: "/fire-systems/fire-alarm-systems" },
+        { label: "Fire Extinguishers (Supply & Servicing)", href: "/fire-systems/fire-extinguishers-supply-servicing" },
+        { label: "AOV (Smoke Ventilation) Systems", href: "/fire-systems/aov-smoke-ventilation-systems" },
+        { label: "Fire Safety Signage", href: "/fire-systems/fire-safety-signage" },
       ],
-      links: fireServicePages.map((page) => ({
-        label: page.title,
-        href: `/fire-systems/${page.slug}`,
-      })),
     },
   },
   {
@@ -116,14 +99,53 @@ export const navItems: NavItem[] = [
     menu: {
       type: "list",
       links: [
-        { label: "CCTV Systems", href: "/security/cctv-systems" },
-        { label: "Intruder Alarm Monitoring", href: "/security/intruder-alarm-monitoring" },
-        { label: "Intruder Alarm", href: "/security/intruder-alarm" },
-        { label: "Access Control Systems", href: "/security/access-control-systems" },
+        { label: "CCTV Surveillance", href: "/security/cctv-surveillance" },
+        { label: "Intruder Alarms", href: "/security/intruder-alarms" },
+        { label: "Access Control", href: "/security/access-control" },
+        { label: "Intercom Systems", href: "/security/intercom-systems" },
+        { label: "Gate Automation", href: "/security/gate-automation" },
       ],
     },
   },
-  { label: "Compliance", href: "/compliance" },
+  {
+    label: "Emergency Systems",
+    href: "/emergency-systems",
+    menu: {
+      type: "list",
+      links: [
+        { label: "Emergency Lighting", href: "/emergency-systems/emergency-lighting" },
+        { label: "Emergency Voice Communication (EVC)", href: "/emergency-systems/emergency-voice-communication-evc" },
+        { label: "Nurse Call Systems", href: "/emergency-systems/nurse-call-systems" },
+        { label: "Emergency & Escape Route Signage", href: "/emergency-systems/emergency-escape-route-signage" },
+      ],
+    },
+  },
+  {
+    label: "Smart Systems",
+    href: "/smart-systems",
+    menu: {
+      type: "list",
+      links: [
+        { label: "Smart Home Automation", href: "/smart-systems/smart-home-automation" },
+        { label: "Wi-Fi, Network & IP Solutions", href: "/smart-systems/wi-fi-network-ip-solutions" },
+        { label: "Minor Electrical Works", href: "/smart-systems/minor-electrical-works" },
+        { label: "Portable Appliance Testing (PAT)", href: "/smart-systems/portable-appliance-testing-pat" },
+      ],
+    },
+  },
+  {
+    label: "Compliance",
+    href: "/compliance",
+    menu: {
+      type: "list",
+      links: [
+        { label: "Certification & Compliance", href: "/compliance/certification-compliance" },
+        { label: "Safety Inspections & Testing", href: "/compliance/safety-inspections-testing" },
+        { label: "Regulatory Compliance Services", href: "/compliance/regulatory-compliance-services" },
+      ],
+    },
+  },
+  { label: "About", href: "/about" },
 ];
 
 export const footerColumns: FooterColumn[] = [
@@ -131,7 +153,10 @@ export const footerColumns: FooterColumn[] = [
     title: "Services",
     links: [
       { label: "Fire Systems", href: "/fire-systems" },
-      { label: "Security Solutions", href: "/security" },
+      { label: "Security Systems", href: "/security" },
+      { label: "Emergency Systems", href: "/emergency-systems" },
+      { label: "Smart Systems", href: "/smart-systems" },
+      { label: "Compliance", href: "/compliance" },
     ],
   },
   {

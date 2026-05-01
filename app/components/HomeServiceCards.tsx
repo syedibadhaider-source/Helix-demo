@@ -8,6 +8,7 @@ type ServiceCardItem = {
   bodyLines: [string, string];
   imageClassName: string;
   bodyClassName: string;
+  cardClassName?: string;
   href?: string;
 };
 
@@ -20,6 +21,7 @@ const serviceCards: ServiceCardItem[] = [
     ],
     imageClassName: "fire-card-image",
     bodyClassName: "service-card-body-fire",
+    cardClassName: "service-card-top",
     href: "/fire-systems",
   },
   {
@@ -30,6 +32,7 @@ const serviceCards: ServiceCardItem[] = [
     ],
     imageClassName: "security-card-image",
     bodyClassName: "service-card-body-security",
+    cardClassName: "service-card-top",
     href: "/security",
   },
   {
@@ -40,7 +43,30 @@ const serviceCards: ServiceCardItem[] = [
     ],
     imageClassName: "compliance-card-image",
     bodyClassName: "service-card-body-compliance",
+    cardClassName: "service-card-top",
     href: "/compliance",
+  },
+  {
+    title: "Emergency Systems",
+    bodyLines: [
+      "We provide emergency lighting, EVC systems, nurse call support,",
+      "and escape route solutions that help people respond and evacuate safely.",
+    ],
+    imageClassName: "emergency-card-image",
+    bodyClassName: "service-card-body-emergency",
+    cardClassName: "service-card-bottom",
+    href: "/emergency-systems",
+  },
+  {
+    title: "Smart Systems",
+    bodyLines: [
+      "We support smart automation, Wi-Fi and network infrastructure,",
+      "minor electrical works, and practical building-ready connected systems.",
+    ],
+    imageClassName: "smart-card-image",
+    bodyClassName: "service-card-body-smart",
+    cardClassName: "service-card-bottom",
+    href: "/smart-systems",
   },
 ];
 
@@ -91,14 +117,18 @@ export function HomeServiceCards() {
 
         if (service.href) {
           return (
-            <Link className="service-card service-card-link" href={service.href} key={service.title}>
+            <Link
+              className={`service-card service-card-link${service.cardClassName ? ` ${service.cardClassName}` : ""}`}
+              href={service.href}
+              key={service.title}
+            >
               {cardContent}
             </Link>
           );
         }
 
         return (
-          <article className="service-card" key={service.title}>
+          <article className={`service-card${service.cardClassName ? ` ${service.cardClassName}` : ""}`} key={service.title}>
             {cardContent}
           </article>
         );

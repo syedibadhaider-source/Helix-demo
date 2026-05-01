@@ -7,7 +7,7 @@ type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
-const group = getServiceGroup("fire");
+const group = getServiceGroup("compliance");
 
 export function generateStaticParams() {
   return group.pages.map((page) => ({ slug: page.slug }));
@@ -15,19 +15,19 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = getServicePage("fire", slug);
+  const page = getServicePage("compliance", slug);
 
-  if (!page) return { title: "Fire Systems | Helix" };
+  if (!page) return { title: "Compliance | Helix" };
 
   return {
-    title: `${page.title} | Fire Systems | Helix`,
+    title: `${page.title} | Compliance | Helix`,
     description: page.intro[0],
   };
 }
 
-export default async function FireSystemsDetailPage({ params }: PageProps) {
+export default async function ComplianceDetailPage({ params }: PageProps) {
   const { slug } = await params;
-  const page = getServicePage("fire", slug);
+  const page = getServicePage("compliance", slug);
 
   if (!page) notFound();
 

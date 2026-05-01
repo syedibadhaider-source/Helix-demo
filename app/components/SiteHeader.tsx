@@ -44,6 +44,7 @@ export function SiteHeader() {
                           key={card.title}
                           href={card.href}
                           className={`nav-fire-card${card.active ? " active" : ""}`}
+                          onClick={() => setActiveMenu(null)}
                         >
                           <div>
                             <strong>{card.title}</strong>
@@ -53,7 +54,7 @@ export function SiteHeader() {
                         </Link>
                       ))}
 
-                      <Link className="nav-explore-all" href={item.href}>
+                      <Link className="nav-explore-all" href={item.href} onClick={() => setActiveMenu(null)}>
                         Explore all
                         <span aria-hidden="true">↗</span>
                       </Link>
@@ -61,7 +62,7 @@ export function SiteHeader() {
 
                     <div className="nav-fire-links">
                       {item.menu.links.map((link) => (
-                        <Link key={link.label} href={link.href}>
+                        <Link key={link.label} href={link.href} onClick={() => setActiveMenu(null)}>
                           {link.label}
                         </Link>
                       ))}
@@ -70,17 +71,15 @@ export function SiteHeader() {
                 ) : (
                   <div className="nav-list-links">
                     {item.menu.links.map((link) => (
-                      <Link key={link.label} href={link.href}>
+                      <Link key={link.label} href={link.href} onClick={() => setActiveMenu(null)}>
                         {link.label}
                       </Link>
                     ))}
 
-                    {item.label === "Security" ? (
-                      <Link className="nav-explore-all inline" href={item.href}>
-                        Explore all
-                        <span aria-hidden="true">↗</span>
-                      </Link>
-                    ) : null}
+                    <Link className="nav-explore-all inline" href={item.href} onClick={() => setActiveMenu(null)}>
+                      Explore all
+                      <span aria-hidden="true">↗</span>
+                    </Link>
                   </div>
                 )}
               </div>

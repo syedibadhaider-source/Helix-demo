@@ -9,6 +9,7 @@ type ServiceCardItem = {
   imageClassName: string;
   bodyClassName: string;
   cardClassName?: string;
+  copyClassName?: string;
   href?: string;
 };
 
@@ -16,34 +17,37 @@ const serviceCards: ServiceCardItem[] = [
   {
     title: "Fire Systems",
     bodyLines: [
-      "We provide a wide range of fire safety services, including alarms, sprinklers,",
-      "emergency lighting, extinguishers, and compliance support.",
+      "Fire alarms, sprinklers, emergency lighting,",
+      "extinguishers and compliance support.",
     ],
     imageClassName: "fire-card-image",
     bodyClassName: "service-card-body-fire",
     cardClassName: "service-card-top",
+    copyClassName: "service-card-copy-top",
     href: "/fire-systems",
   },
   {
     title: "Security Systems",
     bodyLines: [
-      "We provide CCTV, alarm monitoring, intruder alarms,",
-      "access control, and joined-up protection for modern facilities.",
+      "CCTV, intruder alarms, access control and monitoring,",
+      "for practical protection across modern facilities.",
     ],
     imageClassName: "security-card-image",
     bodyClassName: "service-card-body-security",
     cardClassName: "service-card-top",
+    copyClassName: "service-card-copy-top",
     href: "/security",
   },
   {
     title: "Compliance",
     bodyLines: [
-      "We support certification, reporting, maintenance records,",
-      "and practical compliance oversight across your property portfolio.",
+      "Certification, reporting, maintenance records,",
+      "and compliance oversight across your portfolio.",
     ],
     imageClassName: "compliance-card-image",
     bodyClassName: "service-card-body-compliance",
     cardClassName: "service-card-top",
+    copyClassName: "service-card-copy-top",
     href: "/compliance",
   },
   {
@@ -101,7 +105,7 @@ export function HomeServiceCards() {
               <div className={`service-card-image ${service.imageClassName}`} />
             </div>
             <div className={`service-card-body ${service.bodyClassName}`}>
-              <div className="service-card-copy">
+              <div className={`service-card-copy${service.copyClassName ? ` ${service.copyClassName}` : ""}`}>
                 <h3>{service.title}</h3>
                 <p>
                   <span>{service.bodyLines[0]}</span>

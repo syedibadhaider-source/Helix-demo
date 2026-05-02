@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { footerColumns } from "../site-data";
 
 export function SiteFooter() {
@@ -10,7 +11,13 @@ export function SiteFooter() {
           <div className="footer-contact-card">
             <div className="footer-card-header">
               <div className="footer-logo-circle">
-                <span className="logo-text">H</span>
+                <Image
+                  src="/helix-logo-footer.png"
+                  alt="Helix footer logo"
+                  width={80}
+                  height={66}
+                  className="footer-logo-image"
+                />
               </div>
               <div className="footer-contact-info">
                 <div className="contact-row">
@@ -74,4 +81,3 @@ export function SiteFooter() {
     </footer>
   );
 }
-

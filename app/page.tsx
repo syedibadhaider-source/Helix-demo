@@ -119,19 +119,71 @@ type ServiceIconKind =
 type PrimaryService = {
   title: string;
   iconSrc: string;
-  accent?: boolean;
-  href?: string;
+  tone: "red" | "blue";
+  href: string;
 };
 
 const primaryServices: PrimaryService[] = [
-  { title: "Fire Alarms", accent: true, iconSrc: "/service-icons/fire-alarms.svg", href: "/fire-systems/fire-alarm-systems" },
-  { title: "Sprinklers", iconSrc: "/service-icons/sprinklers.svg", href: "/fire-systems/automatic-opening-ventilation" },
-  { title: "Emergency Lighting", iconSrc: "/service-icons/emergency-lighting.svg", href: "/fire-systems/emergency-lighting" },
-  { title: "Fire Extinguishers", iconSrc: "/service-icons/fire-extinguishers.svg", href: "/fire-systems/fire-extinguishers" },
-  { title: "Dry & Wet Risers", iconSrc: "/service-icons/dry-wet-risers.svg", href: "/fire-systems/certification-compliance" },
-  { title: "Kitchen Suppression", iconSrc: "/service-icons/kitchen-suppression.svg", href: "/fire-systems/pa-speaker-systems" },
-  { title: "CCTV", iconSrc: "/service-icons/cctv.svg" },
-  { title: "Intruder Alarms", iconSrc: "/service-icons/intruder-alarms.svg" },
+  {
+    title: "Fire Alarm Systems",
+    tone: "red",
+    iconSrc: "/service-icons/fire-alarm-systems.svg",
+    href: "/fire-systems/fire-alarm-systems",
+  },
+  {
+    title: "AOV Smoke Ventilation",
+    tone: "blue",
+    iconSrc: "/service-icons/aov-smoke-ventilation-systems.svg",
+    href: "/fire-systems/aov-smoke-ventilation-systems",
+  },
+  {
+    title: "CCTV Surveillance",
+    tone: "red",
+    iconSrc: "/service-icons/cctv-surveillance.svg",
+    href: "/security/cctv-surveillance",
+  },
+  {
+    title: "Intruder Alarms",
+    tone: "blue",
+    iconSrc: "/service-icons/intruder-alarms-new.svg",
+    href: "/security/intruder-alarms",
+  },
+  {
+    title: "Access Control",
+    tone: "red",
+    iconSrc: "/service-icons/access-control.svg",
+    href: "/security/access-control",
+  },
+  {
+    title: "Intercom Systems",
+    tone: "blue",
+    iconSrc: "/service-icons/intercom-systems.svg",
+    href: "/security/intercom-systems",
+  },
+  {
+    title: "Emergency Lighting",
+    tone: "red",
+    iconSrc: "/service-icons/emergency-lighting-new.svg",
+    href: "/emergency-systems/emergency-lighting",
+  },
+  {
+    title: "Wi-Fi, Network & IP",
+    tone: "blue",
+    iconSrc: "/service-icons/wi-fi-network-ip-solutions.svg",
+    href: "/smart-systems/wi-fi-network-ip-solutions",
+  },
+  {
+    title: "Certification & Compliance",
+    tone: "red",
+    iconSrc: "/service-icons/certification-compliance.svg",
+    href: "/compliance/certification-compliance",
+  },
+  {
+    title: "Safety Inspections & Testing",
+    tone: "blue",
+    iconSrc: "/service-icons/safety-inspections-testing.svg",
+    href: "/compliance/safety-inspections-testing",
+  },
 ] as const;
 
 type ValueIconKind = "reliable" | "trusted" | "knowledgeable" | "speed" | "innovative";
@@ -344,34 +396,21 @@ export default function Home() {
 
         <div className="primary-services-grid">
           {primaryServices.map((service) => (
-            service.href ? (
-              <Link
-                key={service.title}
-                href={service.href}
-                className={`primary-service-card${service.accent ? " accent-red" : ""}`}
-              >
-                <span className="card-launch" aria-hidden="true">
-                  ↗
-                </span>
-                <div className="service-icon">
-                  <Image src={service.iconSrc} alt="" width={64} height={64} aria-hidden="true" />
-                </div>
-                <h3>{service.title}</h3>
-              </Link>
-            ) : (
-              <article
-                key={service.title}
-                className={`primary-service-card${service.accent ? " accent-red" : ""}`}
-              >
-                <span className="card-launch" aria-hidden="true">
-                  ↗
-                </span>
-                <div className="service-icon">
-                  <Image src={service.iconSrc} alt="" width={64} height={64} aria-hidden="true" />
-                </div>
-                <h3>{service.title}</h3>
-              </article>
-            )
+            <Link
+              key={service.title}
+              href={service.href}
+              className={`primary-service-card tone-${service.tone}`}
+            >
+              <span className="card-launch" aria-hidden="true">
+                ↗
+              </span>
+              <span
+                className="service-icon"
+                aria-hidden="true"
+                style={{ ["--icon-mask" as any]: `url('${service.iconSrc}')` }}
+              />
+              <h3>{service.title}</h3>
+            </Link>
           ))}
         </div>
       </section>

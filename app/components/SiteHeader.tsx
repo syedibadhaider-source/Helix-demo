@@ -11,7 +11,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand-mark" href="/" aria-label="Helix home">
-        <Image className="brand-logo" src="/helix-logo.png" alt="Helix logo" width={272} height={78} priority />
+        <Image className="brand-logo" src="/helix-logo-header.png" alt="Helix logo" width={272} height={153} priority />
       </Link>
 
       <nav className="site-nav" aria-label="Primary">

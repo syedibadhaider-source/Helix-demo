@@ -355,7 +355,7 @@ const emergencyPages = [
       "Emergency lighting keeps escape routes, exits and key safety areas visible when normal lighting fails.",
       "Helix designs, installs, tests and maintains emergency lighting systems for residential, commercial and managed properties.",
     ],
-    heroImage: "/emergency-lighting-service.png",
+    heroImage: "/emergency-systems-card.png",
     heroAlt: "Emergency lighting illuminating a safe evacuation route in a stairwell",
     sectionTitle: "Emergency lighting for safe evacuation",
     sectionBody: [
@@ -389,7 +389,7 @@ const emergencyPages = [
       "Emergency Voice Communication systems help building users and response teams communicate during incidents.",
       "Helix installs and maintains EVC systems for refuge areas, managed buildings and safety-critical environments.",
     ],
-    heroImage: "/nurse-call-emergency-communication-service.png",
+    heroImage: "/emergency-systems-card.png",
     heroAlt: "Emergency communication control panel with wall speaker in a commercial building",
     sectionTitle: "EVC systems for safer response",
     sectionBody: [
@@ -423,7 +423,7 @@ const emergencyPages = [
       "Nurse call systems help residents, patients and building users request assistance quickly.",
       "Helix designs, installs and maintains nurse call systems for care, assisted living and safety-critical environments.",
     ],
-    heroImage: "/nurse-call-emergency-communication-service.png",
+    heroImage: "/emergency-systems-card.png",
     heroAlt: "Emergency communication control panel with wall speaker in a commercial building",
     sectionTitle: "Nurse call systems designed around response",
     sectionBody: [
@@ -457,7 +457,7 @@ const emergencyPages = [
       "Emergency and escape route signage helps occupants understand where to go quickly during an incident.",
       "Helix reviews, supplies and positions signage for evacuation routes, exits and safety-critical areas.",
     ],
-    heroImage: "/emergency-lighting-service.png",
+    heroImage: "/emergency-systems-card.png",
     heroAlt: "Emergency exit route signage and lighting in a stairwell",
     sectionTitle: "Signage that supports safe movement",
     sectionBody: [
@@ -494,7 +494,7 @@ const smartPages = [
       "Smart automation helps homes and managed spaces control lighting, access, security and everyday systems more easily.",
       "Helix plans and installs practical smart systems that are reliable, maintainable and appropriate for the property.",
     ],
-    heroImage: "/hero-helix-security.png",
+    heroImage: "/smart-systems-card.png",
     heroAlt: "Helix engineer supporting modern smart building systems",
     sectionTitle: "Smart systems designed around daily use",
     sectionBody: [
@@ -528,7 +528,7 @@ const smartPages = [
       "Security, access and smart systems rely on dependable connectivity.",
       "Helix supports Wi-Fi, network and IP solutions that help building systems communicate reliably.",
     ],
-    heroImage: "/security-card.png",
+    heroImage: "/smart-systems-card.png",
     heroAlt: "Security and network control equipment in a modern building",
     sectionTitle: "Connectivity that supports your systems",
     sectionBody: [
@@ -795,7 +795,7 @@ export const serviceGroups: Record<ServiceGroupKey, ServiceGroup> = {
     landing: makeLanding("Emergency Systems", "emergency-systems", "Emergency Systems", "Safe response when it matters", [
       "Helix supports emergency systems that help people evacuate, communicate and request support quickly.",
       "From emergency lighting and EVC to nurse call and escape route signage, we keep safety-critical systems clear and reliable.",
-    ], "/emergency-lighting-service.png", emergencyPages),
+    ], "/emergency-systems-card.png", emergencyPages),
     pages: emergencyPages,
   },
   smart: {
@@ -806,7 +806,7 @@ export const serviceGroups: Record<ServiceGroupKey, ServiceGroup> = {
     landing: makeLanding("Smart Systems", "smart-systems", "Smart Systems", "Connected building support", [
       "Helix supports smart, networked and electrical services that help modern properties operate more smoothly.",
       "We focus on practical systems that are reliable, maintainable and easy for clients to manage.",
-    ], "/hero-helix-security.png", smartPages),
+    ], "/smart-systems-card.png", smartPages),
     pages: smartPages,
   },
   compliance: {

@@ -114,7 +114,7 @@ export function HomeTestimonials() {
 
                 <a className="testimonial-button" href="/book-now">
                   Book Consultation
-                  <span aria-hidden="true">↗</span>
+                  <span className="homepage-inline-arrow" aria-hidden="true" />
                 </a>
               </div>
             </article>

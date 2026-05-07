@@ -401,9 +401,7 @@ export default function Home() {
               href={service.href}
               className={`primary-service-card tone-${service.tone}`}
             >
-              <span className="card-launch" aria-hidden="true">
-                ↗
-              </span>
+              <span className="card-launch" aria-hidden="true" />
               <span
                 className="service-icon"
                 aria-hidden="true"
@@ -439,7 +437,7 @@ export default function Home() {
             </p>
             <a className="compliance-button" href="/book-now">
               Your Responsibilities
-              <span aria-hidden="true">↗</span>
+              <span className="homepage-inline-arrow" aria-hidden="true" />
             </a>
           </div>
 
@@ -562,7 +560,7 @@ export default function Home() {
 
           <a className="value-mosaic-button" href="#resources">
             Read all of our values
-            <span aria-hidden="true">↗</span>
+            <span className="homepage-inline-arrow" aria-hidden="true" />
           </a>
         </div>
       </section>

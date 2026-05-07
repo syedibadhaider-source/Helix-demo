@@ -112,9 +112,7 @@ export function HomeServiceCards() {
                   <span>{service.bodyLines[1]}</span>
                 </p>
               </div>
-              <span className="service-arrow" aria-hidden="true">
-                ↗
-              </span>
+              <span className="service-arrow" aria-hidden="true" />
             </div>
           </>
         );

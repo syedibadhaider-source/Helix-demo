@@ -919,8 +919,20 @@ a {
   background: rgba(255, 16, 21, 0.26);
   border: 1px solid rgba(255, 255, 255, 0.14);
   color: #fff;
-  font-size: 1.45rem;
-  line-height: 1;
+  font-size: 0;
+  line-height: 0;
+}
+
+.service-arrow::before,
+.card-launch::before,
+.homepage-inline-arrow::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+  -webkit-mask: url("/right-arrow-home.svg") center / contain no-repeat;
+  mask: url("/right-arrow-home.svg") center / contain no-repeat;
 }
 
 .service-card-body-emergency .service-arrow {
@@ -1122,13 +1134,30 @@ a {
   position: absolute;
   top: 12px;
   right: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
   color: rgba(52, 56, 60, 0.38);
-  font-size: 1.45rem;
-  line-height: 1;
+  font-size: 0;
+  line-height: 0;
   transition:
     transform 180ms ease,
     color 180ms ease,
     opacity 180ms ease;
+}
+
+.homepage-inline-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 1.05rem;
+  width: 1.05rem;
+  height: 1.05rem;
+  color: currentColor;
+  font-size: 0;
+  line-height: 0;
 }
 
 .service-icon {

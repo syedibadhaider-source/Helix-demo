@@ -186,7 +186,7 @@ const primaryServices: PrimaryService[] = [
   },
 ] as const;
 
-type ValueIconKind = "reliable" | "trusted" | "knowledgeable" | "speed" | "innovative";
+type ValueIconKind = "reliable" | "trusted" | "knowledgeable" | "speed" | "innovative" | "safety";
 
 const companyValues: {
   title: string;
@@ -194,48 +194,51 @@ const companyValues: {
   points: string[];
 }[] = [
   {
-    title: "Reliable",
+    title: "Dependable Support",
     icon: "reliable",
     points: [
-      "We are here for our customers; 24 hours a day, 365 days a year.",
-      "We provide an unrivalled quality of service with confidence.",
-      "We shape our services according to our customer's needs.",
+      "We are committed to being there when our customers need us most. From urgent callouts to planned maintenance, Helix provides a clear, reliable and professional service all year round.",
+      "We take time to understand each property, system and responsibility so our support is practical, well organised and built around the customer’s needs.",
     ],
   },
   {
-    title: "Trusted",
+    title: "Trust & Responsibility",
     icon: "trusted",
     points: [
-      "We act with integrity by doing what's right, not what's easy to ensure that our customer's obligations are fulfilled and compliant.",
-      "We act with honesty and pride ourselves on nurturing long-term customer relationships.",
-      "Our work is continually assessed by independent third-party accreditors to ensure the highest quality service and maintenance; the safety of our employees, customers and partners is our top priority.",
+      "We believe safety work should be carried out with honesty, care and accountability. Our team focuses on doing the right thing, keeping customers informed and helping them meet their fire, security and compliance responsibilities.",
+      "We aim to build long term relationships through clear communication, consistent workmanship and dependable aftercare.",
     ],
   },
   {
-    title: "Knowledgeable",
+    title: "Technical Expertise",
     icon: "knowledgeable",
     points: [
-      "Our nationwide team of highly-trained technicians are our greatest assets, providing the UK with world-class fire safety and security.",
-      "We support our technicians through a team of technical managers, experienced account handlers, designers and support staff.",
-      "Our passion for continuous learning and development makes us credible experts in ensuring legal fire safety and security responsibilities are adhered to.",
+      "Our engineers and support team bring practical knowledge across fire systems, security systems, emergency systems and compliance support.",
+      "We continue to improve our skills, processes and system knowledge so customers receive advice and service they can trust.",
     ],
   },
   {
-    title: "Speed of Response",
+    title: "Fast Response",
     icon: "speed",
     points: [
-      "We deliver industry leading call-out response times; we recognise that quick resolutions are important to our customers.",
-      "We constantly review new technology and innovative solutions to improve the efficiency and effectiveness of our service.",
-      "We pride ourselves on the speed and capabilities of our support and customer service teams.",
+      "When safety or security systems need attention, speed matters. Helix works to respond quickly, resolve issues efficiently and reduce disruption for homes, businesses and managed properties.",
+      "Our service approach is built around clear updates, practical solutions and responsive customer support.",
     ],
   },
   {
-    title: "Innovative",
+    title: "Smarter Solutions",
     icon: "innovative",
     points: [
-      "We push for simplicity, utilising unparalleled systems to save our customers' both time and money, often by removing the need for multiple technician visits.",
-      "We utilise the latest technologies to provide a suite of management information and analytics in one centralised customer portal.",
-      "We partner with industry leading systems to widen our technical capabilities and provide additional account visibility to our customers.",
+      "We use modern systems, joined up thinking and efficient processes to make fire and security management easier for our customers.",
+      "Where possible, we recommend smarter solutions that save time, improve visibility and support better long term system performance.",
+    ],
+  },
+  {
+    title: "Safety First",
+    icon: "safety",
+    points: [
+      "Every service we provide is guided by the safety of people, property and daily operations.",
+      "From installation to maintenance and compliance records, our focus is always on protecting what matters and helping customers stay prepared.",
     ],
   },
 ];
@@ -351,6 +354,13 @@ function ValueIcon({ kind }: { kind: ValueIconKind }) {
           <path d="M32 10a14 14 0 0 1 9 25v7H23v-7a14 14 0 0 1 9-25z" fill="none" stroke="currentColor" strokeWidth="4" strokeLinejoin="round" />
           <path d="M25 48h14M26 54h12" fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="4" />
           <path d="M32 19v13M25 24l7 8 7-8" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" />
+        </svg>
+      );
+    case "safety":
+      return (
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 6 L12 14 V26 C12 40 20 52 32 58 C44 52 52 40 52 26 V14 L32 6 Z" fill="none" stroke="currentColor" strokeWidth="4" strokeLinejoin="round" />
+          <path d="M24 32 L29 37 L41 25" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       );
   }

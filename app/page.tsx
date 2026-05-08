@@ -414,21 +414,44 @@ export default function Home() {
         </div>
 
         {/* Mobile View (Marquee) */}
-        <div className="primary-services-marquee-wrapper block md:hidden">
-          <div className="primary-services-marquee">
+        <div className="block md:hidden overflow-hidden relative w-full pt-2 pb-4" style={{ marginLeft: "calc(var(--page-gutter) * -1)", width: "100vw" }}>
+          <style>{`
+            @keyframes scroll-marquee {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(calc(-50% - 6px)); }
+            }
+            .animate-scroll-marquee {
+              animation: scroll-marquee 20s linear infinite;
+            }
+            .animate-scroll-marquee:hover {
+              animation-play-state: paused;
+            }
+            .mobile-card-tone-red:hover .mobile-icon { background-color: var(--red); }
+            .mobile-card-tone-blue:hover .mobile-icon { background-color: #2d66d5; }
+          `}</style>
+          <div className="flex gap-3 w-max animate-scroll-marquee" style={{ paddingLeft: "var(--page-gutter)" }}>
             {[...primaryServices, ...primaryServices].map((service, index) => (
               <Link
                 key={`${service.title}-${index}`}
                 href={service.href}
-                className={`primary-service-card-mobile tone-${service.tone}`}
+                className={`mobile-card-tone-${service.tone} relative flex flex-col justify-start min-h-[150px] w-[calc(50vw-20px)] shrink-0 p-4 rounded-2xl bg-white text-[#34383c] shadow-[0_10px_24px_rgba(10,17,20,0.08)] transition-all hover:-translate-y-1 hover:shadow-[0_14px_32px_rgba(10,17,20,0.12)]`}
               >
-                <span className="card-launch" aria-hidden="true" />
+                <span className="card-launch absolute top-3 right-3 flex items-center justify-center w-5 h-5 text-[#34383c]/40" aria-hidden="true" />
                 <span
-                  className="service-icon"
+                  className="mobile-icon mb-3 w-[34px] h-[34px] bg-[var(--navy)] transition-colors duration-200"
                   aria-hidden="true"
-                  style={{ ["--icon-mask" as any]: `url('${service.iconSrc}')` }}
+                  style={{ 
+                    WebkitMaskImage: `url('${service.iconSrc}')`,
+                    maskImage: `url('${service.iconSrc}')`,
+                    WebkitMaskSize: 'contain',
+                    maskSize: 'contain',
+                    WebkitMaskRepeat: 'no-repeat',
+                    maskRepeat: 'no-repeat',
+                    WebkitMaskPosition: 'center',
+                    maskPosition: 'center'
+                  }}
                 />
-                <h3>{service.title}</h3>
+                <h3 className="mt-auto font-heading text-[0.95rem] leading-[1.15] font-extrabold tracking-tight">{service.title}</h3>
               </Link>
             ))}
           </div>

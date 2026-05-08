@@ -4083,3 +4083,152 @@ a {
     gap: 10px;
   }
 }
+
+/* Mobile Header Actions */
+.mobile-header-actions {
+  display: none;
+}
+.mobile-menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  color: var(--navy);
+  cursor: pointer;
+  padding: 8px;
+}
+.mobile-menu-toggle svg {
+  width: 28px;
+  height: 28px;
+}
+.mobile-only-whatsapp {
+  display: none;
+}
+.desktop-only-whatsapp {
+  display: inline-flex;
+}
+
+@media (max-width: 991px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px var(--page-gutter);
+    flex-wrap: wrap;
+  }
+  
+  .brand-logo {
+    width: 140px;
+  }
+
+  .mobile-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .mobile-only-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: #1ca34a;
+    color: #fff;
+    transition: transform 160ms ease, box-shadow 160ms ease;
+  }
+  
+  .mobile-only-whatsapp svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .site-header-collapse {
+    flex-basis: 100%;
+    display: none;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+    margin-top: 12px;
+  }
+
+  .site-header-collapse.is-open {
+    display: flex;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+    display: flex;
+  }
+
+  .nav-item {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .nav-item > a {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    width: 100%;
+    font-size: 1.05rem;
+  }
+
+  .nav-dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 0 0 16px 0;
+    display: none;
+  }
+
+  .has-menu.menu-open .nav-dropdown {
+    display: block;
+  }
+
+  .nav-dropdown-fire {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .nav-fire-card {
+    min-height: auto;
+  }
+
+  .nav-dropdown-list {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+  }
+
+  .desktop-only-whatsapp {
+    display: none;
+  }
+
+  .header-cta {
+    width: 100%;
+    margin-top: 12px;
+  }
+}

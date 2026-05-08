@@ -622,7 +622,7 @@ export default function Home() {
         </div>
       </section>
 
-      <HomeTestimonials />
+      {/* <HomeTestimonials /> */}
 
       <section className="closing-cta-section">
         <div className="closing-cta-shell">

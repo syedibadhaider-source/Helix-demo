@@ -396,12 +396,11 @@ export default function Home() {
       <section className="primary-services-section" id="our-company">
         <div className="primary-services-intro">
           <h2>Our Primary Services</h2>
-          <p>
-            Providing complete fire safety, security, and compliance services — from fire alarm
-            installation, servicing, monitoring, and clear zone plans, to modern CCTV, access control,
-            and intruder alarm systems. We also support your ongoing compliance through inspections,
-            testing, certification, and maintenance, helping keep your premises safe, compliant, and
-            fully operational — all delivered by our in-house team.
+          <p className="!max-w-[80ch]">
+            <span className="md:block">Providing complete fire safety, security, and compliance services — from fire alarm </span>
+            <span className="md:block">installation, servicing, monitoring, and clear zone plans, to modern CCTV, access control, </span>
+            <span className="md:block">and intruder alarm systems. We also support your ongoing compliance through inspections, </span>
+            <span className="md:block">testing, certification, and maintenance, helping keep your premises safe, compliant, and fully operational — all delivered by our in-house team.</span>
           </p>
         </div>
 

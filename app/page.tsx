@@ -397,10 +397,11 @@ export default function Home() {
         <div className="primary-services-intro">
           <h2>Our Primary Services</h2>
           <p>
-            Delivering comprehensive fire safety, protection and maintenance services, including in-house
-            sprinkler and fire alarm servicing, installation, monitoring and zone plans, as well as
-            industry-leading security solutions such as access control, CCTV and intruder alarm systems, all
-            without the need for third parties.
+            Providing complete fire safety, security, and compliance services — from fire alarm
+            installation, servicing, monitoring, and clear zone plans, to modern CCTV, access control,
+            and intruder alarm systems. We also support your ongoing compliance through inspections,
+            testing, certification, and maintenance, helping keep your premises safe, compliant, and
+            fully operational — all delivered by our in-house team.
           </p>
         </div>
 

@@ -395,7 +395,7 @@ export default function Home() {
         </div>
 
         {/* Desktop View */}
-        <div className="primary-services-grid hidden md:grid">
+        <div className="primary-services-grid !hidden md:!grid">
           {primaryServices.map((service) => (
             <Link
               key={service.title}

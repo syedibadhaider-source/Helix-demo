@@ -394,7 +394,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="primary-services-grid">
+        {/* Desktop View */}
+        <div className="primary-services-grid hidden md:grid">
           {primaryServices.map((service) => (
             <Link
               key={service.title}
@@ -410,6 +411,27 @@ export default function Home() {
               <h3>{service.title}</h3>
             </Link>
           ))}
+        </div>
+
+        {/* Mobile View (Marquee) */}
+        <div className="primary-services-marquee-wrapper block md:hidden">
+          <div className="primary-services-marquee">
+            {[...primaryServices, ...primaryServices].map((service, index) => (
+              <Link
+                key={`${service.title}-${index}`}
+                href={service.href}
+                className={`primary-service-card-mobile tone-${service.tone}`}
+              >
+                <span className="card-launch" aria-hidden="true" />
+                <span
+                  className="service-icon"
+                  aria-hidden="true"
+                  style={{ ["--icon-mask" as any]: `url('${service.iconSrc}')` }}
+                />
+                <h3>{service.title}</h3>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

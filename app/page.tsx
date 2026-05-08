@@ -414,7 +414,7 @@ export default function Home() {
         </div>
 
         {/* Mobile View (Marquee) */}
-        <div className="block md:hidden overflow-hidden relative w-full pt-2 pb-4" style={{ marginLeft: "calc(var(--page-gutter) * -1)", width: "100vw" }}>
+        <div className="marquee-wrapper block md:hidden overflow-hidden relative w-full pt-2 pb-4" style={{ marginLeft: "calc(var(--page-gutter) * -1)", width: "100vw" }}>
           <style>{`
             @keyframes scroll-marquee {
               0% { transform: translateX(0); }
@@ -423,8 +423,10 @@ export default function Home() {
             .animate-scroll-marquee {
               animation: scroll-marquee 20s linear infinite;
             }
+            .marquee-wrapper:hover .animate-scroll-marquee,
             .animate-scroll-marquee:hover {
-              animation-play-state: paused;
+              -webkit-animation-play-state: paused !important;
+              animation-play-state: paused !important;
             }
             .mobile-card-tone-red:hover .mobile-icon { background-color: var(--red); }
             .mobile-card-tone-blue:hover .mobile-icon { background-color: #2d66d5; }

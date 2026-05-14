@@ -504,7 +504,7 @@ export default function Home() {
               controls
               playsInline
               preload="metadata"
-              poster="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1400&q=80"
+              poster="/images/001 - FIRE SYSTEMS/004 - Fire Safety Signage/Fire safety signage in University Library.png"
             >
               <source
                 src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4"

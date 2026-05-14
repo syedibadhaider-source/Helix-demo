@@ -19,7 +19,7 @@ const testimonials: HomeTestimonial[] = [
     person: "Pat Murphy",
     role: "Area Building Manager, Mitchells & Butlers",
     image:
-      "https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80",
+      "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Restaurant.png",
   },
   {
     company: "Urban Workplace Group",
@@ -28,7 +28,7 @@ const testimonials: HomeTestimonial[] = [
     person: "Sophie Harrington",
     role: "Facilities Lead, Urban Workplace Group",
     image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+      "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Tech HQ and glass corridor 2.png",
   },
   {
     company: "Northbridge Leisure",
@@ -37,7 +37,7 @@ const testimonials: HomeTestimonial[] = [
     person: "Chris Benton",
     role: "Operations Director, Northbridge Leisure",
     image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/High End Cafe.png",
   },
   {
     company: "Meridian Estates",
@@ -46,7 +46,7 @@ const testimonials: HomeTestimonial[] = [
     person: "Emma Collins",
     role: "Property Compliance Manager, Meridian Estates",
     image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+      "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Hotel.png",
   },
 ];
 

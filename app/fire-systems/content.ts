@@ -25,7 +25,7 @@ export const fireSystemsPage = {
     "From fire alarm installation and emergency lighting to extinguishers, smoke ventilation, nurse call systems and compliance certification, our team delivers professional fire safety services from initial survey through installation, testing, maintenance and documentation.",
     "We work with residential properties, commercial buildings, offices, retail premises, care environments, apartment blocks, schools, warehouses and managed sites.",
   ],
-  image: "/fire-systems-card.png",
+  image: "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Modern corporate office lobby.png",
   sectionTitle: "Complete fire safety solutions for your property",
   sectionBody: [
     "Every building has different risks, layouts and compliance requirements. That is why we do not use a one size fits all approach. We assess your premises carefully, recommend the most suitable system and ensure every installation is completed to a high professional standard.",
@@ -124,7 +124,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "A reliable fire alarm system is essential for protecting people, property and business operations. At Helix, we design, install and maintain fire alarm systems that provide early warning, dependable performance and compliance support for a wide range of buildings.",
       "Whether you require a new installation, system upgrade, repair, commissioning or scheduled maintenance, our team can provide a complete fire alarm service tailored to your property.",
     ],
-    leadImage: "/fire-alarm-systems-service.png",
+    leadImage: "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Fire Alarm Panel 1 - Shown internally only - fixed to wall - mid height.webp",
     leadAlt: "Helix fire alarm panel with alarm sounder, beacon, smoke detector and manual call point",
     sectionTitle: "Professional fire alarm installation",
     sectionBody: [
@@ -174,7 +174,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Fire extinguishers are a vital part of any fire safety strategy. They provide immediate protection in the early stages of a fire and help support the safety of occupants, staff and visitors.",
       "Helix supplies, installs and maintains fire extinguishers for residential, commercial and managed properties, ensuring the correct extinguisher types are provided for the risks within your building.",
     ],
-    leadImage: "/fire-extinguishers-service.png",
+    leadImage: "/images/001 - FIRE SYSTEMS/002 - Fire Extinguishers/Wall Mounted UK Fire Extinguishers in Modern Warehouse.png",
     leadAlt: "Wall mounted water foam and CO2 fire extinguishers with safety signage in a commercial building",
     sectionTitle: "Correct extinguishers for the right risk",
     sectionBody: [
@@ -224,7 +224,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Emergency lighting is essential for helping people evacuate safely during a power failure, fire or emergency situation. It ensures escape routes, exits, stairwells and key safety areas remain visible when normal lighting fails.",
       "Helix designs, installs, tests and maintains emergency lighting systems for residential, commercial and managed properties.",
     ],
-    leadImage: "/emergency-lighting-service.png",
+    leadImage: "/images/003 - EMERGENCY SYSTEMS/001 - Emergency Lighting/Emergency escape lighting - High tech office corridor.png",
     leadAlt: "Emergency lighting illuminating a safe evacuation route in a stairwell",
     sectionTitle: "Safe evacuation when it matters most",
     sectionBody: [
@@ -278,7 +278,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Automatic Opening Ventilation systems, often known as AOV systems, are designed to help control smoke movement during a fire. These systems support safer evacuation by helping keep escape routes clearer and reducing smoke build up in key areas.",
       "Helix designs, installs and maintains AOV systems for residential, commercial and managed buildings.",
     ],
-    leadImage: "/automatic-opening-ventilation-service.png",
+    leadImage: "/images/001 - FIRE SYSTEMS/003 - AOV Smoke Ventilation Systems/AOV residential daytime.png",
     leadAlt: "Automatic opening ventilation windows controlling smoke movement in a stairwell",
     sectionTitle: "Smoke control for safer escape routes",
     sectionBody: [
@@ -330,7 +330,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Nurse call and emergency communication systems help ensure assistance can be requested quickly when it is needed most. These systems are especially important in care environments, assisted living facilities, healthcare settings and buildings where vulnerable occupants may require support.",
       "Helix designs, installs and maintains reliable emergency communication systems for residential and commercial properties.",
     ],
-    leadImage: "/nurse-call-emergency-communication-service.png",
+    leadImage: "/images/003 - EMERGENCY SYSTEMS/002 - Emergency Voice Communication - EVC/EVC Main Panel -  Hotel lobby.png",
     leadAlt: "Emergency communication control panel with wall speaker in a commercial building",
     sectionTitle: "Fast communication in safety critical environments",
     sectionBody: [
@@ -385,7 +385,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Clear communication is essential in many buildings, especially in commercial, public access and managed environments. PA and speaker systems allow announcements, alerts, background audio and important messages to be delivered clearly across your property.",
       "Helix designs, installs and maintains PA and speaker systems for residential, commercial and public environments.",
     ],
-    leadImage: "/security-card.png",
+    leadImage: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV - Retail.png",
     leadAlt: "PA system and speaker controls",
     sectionTitle: "Clear audio across your property",
     sectionBody: [
@@ -438,7 +438,7 @@ export const fireDetailPages: FireDetailPage[] = [
       "Keeping your fire, electrical and safety systems properly tested, certified and documented is essential for responsible property management. Helix provides professional certification and compliance support for residential, commercial and managed properties.",
       "We help landlords, businesses, facilities managers and property owners maintain clear records and confidence in their safety systems.",
     ],
-    leadImage: "/certification-compliance-service.png",
+    leadImage: "/images/004 - SMART SYSTEMS/004 - Portable Appliance Testing PAT/PAT testing in a factory.png",
     leadAlt: "Fire safety inspection checklist with fire alarm emergency lighting and extinguisher equipment",
     sectionTitle: "Clear documentation for safer buildings",
     sectionBody: [

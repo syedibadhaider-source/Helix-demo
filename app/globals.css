@@ -243,29 +243,29 @@ a {
 }
 
 .nav-explore-all {
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  min-height: 44px;
+  gap: 16px;
+  min-height: 52px;
   margin-top: 2px;
-  padding: 0 16px;
+  padding: 0 16px !important;
   border-radius: 8px;
   background: #edf1ef;
-  color: #273034;
+  color: #1e2528;
   font-family: var(--font-heading-stack);
-  font-size: 0.78rem;
+  font-size: 1.1rem !important;
   font-weight: 700;
 }
 
 .nav-explore-all.inline {
   width: 100%;
-  margin-top: 6px;
-  justify-content: space-between;
+  margin-top: 16px;
+  justify-content: center;
 }
 
 .nav-explore-all span {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1;
 }
 
@@ -305,12 +305,21 @@ a {
 }
 
 .nav-list-links {
-  gap: 16px;
+  gap: 4px;
 }
 
 .nav-list-links a {
-  font-size: 0.88rem;
-  line-height: 1.1;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: left;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-list-links a:hover {
+  background-color: #f8f9fa;
+  color: #ff1015;
 }
 
 .header-cta,
@@ -407,15 +416,15 @@ a {
 }
 
 .hero-slide-fire {
-  background-image: url("/fire-hero-slider.png");
+  background-image: url("/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Modern corporate office lobby.png");
 }
 
 .hero-slide-security {
-  background-image: url("/security-hero-slider.png");
+  background-image: url("/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png");
 }
 
 .hero-slide-compliance {
-  background-image: url("/compliance-hero-slider.png");
+  background-image: url("/images/001 - FIRE SYSTEMS/004 - Fire Safety Signage/Fire safety signage in University Library.png");
 }
 
 .hero-slide-overlay {
@@ -547,7 +556,7 @@ a {
   z-index: -3;
   background:
     linear-gradient(90deg, rgba(14, 17, 19, 0.76) 0%, rgba(30, 33, 35, 0.46) 28%, rgba(255, 255, 255, 0.08) 60%, rgba(255, 255, 255, 0) 100%),
-    url("/hero-helix-security.png")
+    url("/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV - Retail.png")
       center center / cover no-repeat;
 }
 
@@ -798,31 +807,31 @@ a {
 .fire-card-image {
   background-image:
     linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02)),
-    url("/fire-systems-card.png");
+    url("/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Tech HQ and glass corridor 2.png");
 }
 
 .security-card-image {
   background-image:
     linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02)),
-    url("/security-card.png");
+    url("/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png");
 }
 
 .compliance-card-image {
   background-image:
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
-    url("/compliance-service-card.png");
+    url("/images/004 - SMART SYSTEMS/004 - Portable Appliance Testing PAT/PAT testing in a factory.png");
 }
 
 .emergency-card-image {
   background-image:
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
-    url("/emergency-systems-card.png");
+    url("/images/003 - EMERGENCY SYSTEMS/001 - Emergency Lighting/Emergency escape lighting - High tech office corridor.png");
 }
 
 .smart-card-image {
   background-image:
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
-    url("/smart-systems-card.png");
+    url("/images/004 - SMART SYSTEMS/002 - Wi-Fi  Network & IP Solutions/Wifi network in a modern setting 1.png");
 }
 
 .service-card-body {
@@ -1549,7 +1558,7 @@ a {
   color: #ffffff;
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.48)),
-    url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80")
+    url("/images/004 - SMART SYSTEMS/004 - Portable Appliance Testing PAT/PAT testing in a factory.png")
       center center / cover no-repeat;
 }
 

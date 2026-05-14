@@ -78,7 +78,7 @@ export function SiteHeader() {
                   }}
                 >
                   {item.label}
-                  {item.menu ? <span aria-hidden="true" className={isMobileMenuOpen ? "transform rotate-0" : ""}>⌄</span> : null}
+                  {item.menu ? <span aria-hidden="true" className={`ml-1.5 text-[1.2em] relative -top-[1px] ${isMobileMenuOpen ? "transform rotate-0" : ""}`}>⌄</span> : null}
                 </Link>
 
                 {item.menu ? (

@@ -167,7 +167,6 @@ export const footerColumns: FooterColumn[] = [
       { label: "Environmental Commitments", href: "/about/environmental-commitments" },
       { label: "Careers", href: "/about/careers" },
       { label: "Contact Us", href: "/book-now" },
-      { label: "Customer Portal", href: "/customer-portal" },
     ],
   },
   {
@@ -176,8 +175,6 @@ export const footerColumns: FooterColumn[] = [
       { label: "Your Responsibilities", href: "/resources/your-responsibilities" },
       { label: "Case Studies", href: "/resources/case-studies" },
       { label: "Brochures", href: "/resources/brochures" },
-      { label: "Downloads", href: "/resources/downloads" },
-      { label: "News", href: "/resources/news" },
       { label: "FAQs", href: "/resources/faqs" },
     ],
   },

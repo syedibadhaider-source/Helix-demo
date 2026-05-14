@@ -269,9 +269,9 @@ function PremiumFooter() {
 
 function getHeroImage(page: PremiumServicePageData, theme: PremiumServiceTheme) {
   if (page.heroImage) return page.heroImage;
-  if (theme.category === "Security Systems") return "/security-card.png";
-  if (theme.category === "Compliance") return "/compliance-service-card.png";
-  return "/fire-alarm-service-hero.png";
+  if (theme.category === "Security Systems") return "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png";
+  if (theme.category === "Compliance") return "/images/004 - SMART SYSTEMS/004 - Portable Appliance Testing PAT/PAT testing in a factory.png";
+  return "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Fire Alarm Panel 1 - Shown internally only - fixed to wall - mid height.webp";
 }
 
 export function PremiumServicePage({
@@ -473,7 +473,7 @@ export function FireAlarmPremiumPage() {
         intro: [
           "A reliable fire alarm system is essential for protecting people, property and business operations. At Helix, we design, install and maintain fire alarm systems that provide early warning, dependable performance and compliance support for a wide range of buildings.",
         ],
-        heroImage: "/fire-alarm-service-hero.png",
+        heroImage: "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Fire Alarm Panel 1 - Shown internally only - fixed to wall - mid height.webp",
         heroAlt: "Fire alarm control panel, smoke detector, call point, emergency light and extinguisher",
         sectionTitle: "Professional Fire Alarm Installation",
         sectionBody: [

@@ -74,7 +74,12 @@ export function SiteFooter() {
             <Link href="/privacy">Privacy Policy</Link>
           </div>
           <div className="footer-copyright">
-            <p>© 2026 Helix Fire Security Ltd. All rights reserved. Designed by Owalistic Solution.</p>
+            <p>
+              © {new Date().getFullYear()} Helix Fire & Security Ltd. All rights reserved. Designed by{" "}
+              <a href="https://www.owlisticstudio.com/" target="_blank" rel="noopener noreferrer" className="hover:text-red transition-colors">
+                Owlistic Studio
+              </a>.
+            </p>
           </div>
         </div>
       </div>

@@ -43,7 +43,7 @@ export const compliancePage: InfoPageData = makePage({
     "Helix supports property owners, landlords, facilities teams and managed portfolios with practical compliance support across fire safety, security systems and ongoing service records.",
     "Our role is to help clients keep systems tested, documented and easier to manage, with clear reporting, planned maintenance and one accountable team behind the work.",
   ],
-  image: "/compliance-service-card.png",
+  image: "/images/004 - SMART SYSTEMS/004 - Portable Appliance Testing PAT/PAT testing in a factory.png",
   imageAlt: "Helix engineer and vehicle supporting compliance-led building services",
   metrics: [
     { value: "Clear", label: "Documentation and reporting" },
@@ -113,7 +113,7 @@ export const aboutCollection: SectionCollection = {
       "Helix Fire & Security delivers integrated fire, security and compliance support for buildings that need a dependable partner, not disconnected contractors.",
       "We work across residential, commercial and managed environments, supporting surveys, installations, servicing, reporting and reactive support through one coordinated team.",
     ],
-    image: "/hero-helix-security.png",
+    image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
     imageAlt: "Helix engineer securing a building entrance",
     metrics: [
       { value: "24/7", label: "Support coverage" },
@@ -164,7 +164,7 @@ export const aboutCollection: SectionCollection = {
         "Helix delivers projects through a clear, staged process that keeps clients informed from first survey through installation, maintenance and reporting.",
         "We focus on practical recommendations, dependable delivery and a single line of accountability throughout the job.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Helix service process in action",
       metrics: [
         { value: "Survey", label: "Initial discovery" },
@@ -213,7 +213,7 @@ export const aboutCollection: SectionCollection = {
         "Helix combines field engineers, technical managers, service coordinators and support teams so clients are backed by more than a single point of contact.",
         "That structure helps us deliver projects properly, keep service visits organised and give clients better visibility across the work being done.",
       ],
-      image: "/security-card.png",
+      image: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png",
       imageAlt: "Team and support focused security environment",
       metrics: [
         { value: "Technical", label: "Engineers and specialists" },
@@ -261,7 +261,7 @@ export const aboutCollection: SectionCollection = {
         "Helix takes a practical approach to environmental responsibility, focusing on efficient operations, sensible planning and long-term system performance.",
         "For us, sustainability is not a standalone message. It sits inside the way projects are scoped, serviced and managed over time.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Helix van and building environment at dusk",
       metrics: [
         { value: "Efficient", label: "Planned callouts" },
@@ -307,7 +307,7 @@ export const aboutCollection: SectionCollection = {
         "Helix is built around quality delivery, responsive support and strong technical standards. That depends on bringing in people who care about doing the job properly.",
         "We welcome engineers, coordinators and support professionals who want to work in a team that values accountability, development and clear communication.",
       ],
-      image: "/security-card.png",
+      image: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png",
       imageAlt: "Professional working environment",
       metrics: [
         { value: "Supportive", label: "Team culture" },
@@ -358,7 +358,7 @@ export const securityCollection: SectionCollection = {
       "Helix designs, installs and maintains security systems that help clients protect buildings, control access and respond quickly when issues arise.",
       "From CCTV and intruder alarms to monitored systems and access control, we deliver security services that are practical to manage and appropriate for the site.",
     ],
-    image: "/security-card.png",
+    image: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png",
     imageAlt: "Security control devices and CCTV hardware",
     metrics: [
       { value: "CCTV", label: "Visual coverage" },
@@ -409,7 +409,7 @@ export const securityCollection: SectionCollection = {
         "CCTV helps clients monitor entrances, shared spaces, circulation routes and high-risk areas with better visibility and clearer incident review.",
         "Helix designs, installs and maintains CCTV systems for buildings that need dependable coverage and straightforward day-to-day management.",
       ],
-      image: "/cctv-systems-service.png",
+      image: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/Hikvision Turret Camera - Wall at high level or Ceiling mounted.webp",
       imageAlt: "CCTV camera and monitoring screens covering a commercial site",
       metrics: [
         { value: "Live view", label: "Better visibility" },
@@ -452,7 +452,7 @@ export const securityCollection: SectionCollection = {
         "Monitoring adds an extra layer of confidence by helping ensure alarm activations are not missed when a site is empty or operating with limited on-site presence.",
         "Helix supports monitored intruder alarm setups that improve awareness and response planning across managed buildings.",
       ],
-      image: "/intruder-alarm-monitoring-service.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Alarm Key Pad 1 - Mounted on wall internally mid height.jpg",
       imageAlt: "Intruder alarm monitoring workstation with alarm event escalation screens",
       metrics: [
         { value: "Always on", label: "Out-of-hours awareness" },
@@ -493,7 +493,7 @@ export const securityCollection: SectionCollection = {
         "Intruder alarm systems help protect buildings during unoccupied periods and provide reassurance that access events or security breaches will trigger a clear response.",
         "Helix installs and maintains intruder alarm systems designed around the access patterns, risk profile and occupancy of each property.",
       ],
-      image: "/intruder-alarm-service.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/PIR Sensor - Mounted internally on wall in corner just below ceiling.avif",
       imageAlt: "Intruder alarm keypad motion detector and mobile app showing an armed system",
       metrics: [
         { value: "Detect", label: "Movement and entry events" },
@@ -534,7 +534,7 @@ export const securityCollection: SectionCollection = {
         "Access control helps clients manage entry more consistently across staff doors, communal areas, restricted spaces and managed buildings.",
         "Helix installs and maintains access systems that improve day-to-day control while still keeping entry straightforward for authorised users.",
       ],
-      image: "/security-card.png",
+      image: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png",
       imageAlt: "Access control and card reader equipment",
       metrics: [
         { value: "Controlled", label: "Entry management" },
@@ -580,7 +580,7 @@ export const resourcesCollection: SectionCollection = {
       "Our resources pages are designed to help clients better understand their responsibilities, review useful materials and access practical guidance around fire, security and compliance.",
       "Whether you are planning work, reviewing service records or looking for supporting documents, these pages give you a clearer starting point.",
     ],
-    image: "/hero-helix-security.png",
+    image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
     imageAlt: "Helix resource and compliance support",
     metrics: [
       { value: "Guidance", label: "Practical responsibilities" },
@@ -624,7 +624,7 @@ export const resourcesCollection: SectionCollection = {
         "Fire and security responsibilities sit with those managing or controlling the building. That includes making sure systems are suitable, maintained and supported with clear records.",
         "Helix helps clients turn those responsibilities into practical actions through surveys, servicing, documentation and clear communication.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Helix responsibilities and compliance support",
       metrics: [
         { value: "Review", label: "Understand your current setup" },
@@ -664,7 +664,7 @@ export const resourcesCollection: SectionCollection = {
       intro: [
         "Case studies help show what integrated delivery looks like in practice. At Helix, that often means stronger visibility, simpler coordination and a more dependable service structure across the site.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Operational building case study scene",
       metrics: [
         { value: "Live sites", label: "Real operating environments" },
@@ -703,7 +703,7 @@ export const resourcesCollection: SectionCollection = {
         "Brochures give clients a quick way to understand service areas, support models and the kinds of buildings we work with.",
         "They are helpful when comparing service scope, sharing information internally or preparing for a conversation with our team.",
       ],
-      image: "/fire-systems-card.png",
+      image: "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Modern corporate office lobby.png",
       imageAlt: "Fire systems brochure-style overview",
       metrics: [
         { value: "Clear", label: "Short service summaries" },
@@ -742,7 +742,7 @@ export const resourcesCollection: SectionCollection = {
         "Downloads provide clients with practical materials that support planning, communication and day-to-day building management.",
         "This can include service summaries, support documents and other materials that make internal review easier.",
       ],
-      image: "/fire-systems-card.png",
+      image: "/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Modern corporate office lobby.png",
       imageAlt: "Downloads and documentation support",
       metrics: [
         { value: "Reference", label: "Keep materials at hand" },
@@ -781,7 +781,7 @@ export const resourcesCollection: SectionCollection = {
       intro: [
         "Our news area is intended to keep clients informed about useful service developments, company updates and broader topics affecting building safety and security support.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Helix news and company update context",
       metrics: [
         { value: "Updates", label: "Company developments" },
@@ -819,7 +819,7 @@ export const resourcesCollection: SectionCollection = {
       intro: [
         "Our FAQs are designed to answer the practical questions clients often ask before booking a survey, arranging service support or reviewing a building’s current setup.",
       ],
-      image: "/security-card.png",
+      image: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png",
       imageAlt: "Frequently asked questions and support context",
       metrics: [
         { value: "Simple", label: "Clear answers" },
@@ -864,7 +864,7 @@ export const companyCollection: SectionCollection = {
       "Helix is structured to support clients across fire systems, security solutions and compliance-focused service delivery with one accountable team.",
       "Our company pages cover the wider frameworks, standards, specialist support areas and long-term capabilities that sit behind that service model.",
     ],
-    image: "/hero-helix-security.png",
+    image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
     imageAlt: "Helix company overview",
     metrics: [
       { value: "Integrated", label: "Fire, security and compliance" },
@@ -911,7 +911,7 @@ export const companyCollection: SectionCollection = {
         "Policies provide the operational foundation for quality, safety, communication and consistency across the work we deliver.",
         "For clients, that matters because good service depends on standards that are applied consistently behind the scenes as well as on site.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Policy and standards support",
       metrics: [
         { value: "Quality", label: "Consistent standards" },
@@ -951,7 +951,7 @@ export const companyCollection: SectionCollection = {
         "Accreditations and memberships help demonstrate that service delivery is supported by recognised standards, assessment and industry engagement.",
         "They are one part of the wider quality picture that clients often review when choosing a long-term fire and security partner.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Accreditation and membership overview",
       metrics: [
         { value: "Recognised", label: "Industry standards" },
@@ -990,7 +990,7 @@ export const companyCollection: SectionCollection = {
         "Framework participation can help clients access services through more structured procurement routes and clearly defined service arrangements.",
         "Helix supports clients who need a provider capable of working within formal frameworks, agreed scopes and longer-term delivery models.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Framework-based service delivery",
       metrics: [
         { value: "Structured", label: "Procurement-friendly" },
@@ -1029,7 +1029,7 @@ export const companyCollection: SectionCollection = {
         "Video content can help explain systems, services and responsibilities more clearly than text alone, especially when multiple stakeholders need the same overview.",
         "Helix uses visual material to make service understanding faster and easier.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Helix video and media content",
       metrics: [
         { value: "Visual", label: "Clearer explanations" },
@@ -1068,7 +1068,7 @@ export const companyCollection: SectionCollection = {
         "When service businesses grow, clients want confidence that standards, communication and accountability will stay consistent.",
         "Helix approaches growth with a focus on integrating people, systems and delivery expectations into one dependable model.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Company growth and integration",
       metrics: [
         { value: "Integrated", label: "One delivery model" },
@@ -1107,7 +1107,7 @@ export const companyCollection: SectionCollection = {
         "Alarm Receiving Centre support is relevant where clients need monitored alarm events handled through a structured escalation path rather than relying on local awareness alone.",
         "Helix helps clients understand how ARC-linked support fits into the wider fire and security service model.",
       ],
-      image: "/security-card.png",
+      image: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png",
       imageAlt: "Alarm receiving and monitoring context",
       metrics: [
         { value: "Monitored", label: "Escalated awareness" },
@@ -1145,7 +1145,7 @@ export const companyCollection: SectionCollection = {
       intro: [
         "Strong service depends on strong people. Training and ongoing development are part of how Helix supports technical quality across fire and security delivery.",
       ],
-      image: "/security-card.png",
+      image: "/images/002 - SECURITY SYSTEMS/001 - CCTV Systems/CCTV External 1.png",
       imageAlt: "Training and development environment",
       metrics: [
         { value: "Learning", label: "Continuous development" },
@@ -1184,7 +1184,7 @@ export const companyCollection: SectionCollection = {
         "Some clients need more than installation or maintenance. They need help reviewing a current setup, shaping the right scope or planning a more structured path forward across fire, security and compliance.",
         "Helix provides consultancy-led support to help make those decisions clearer.",
       ],
-      image: "/hero-helix-security.png",
+      image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
       imageAlt: "Consultancy and planning support",
       metrics: [
         { value: "Review", label: "Assess the current position" },
@@ -1227,7 +1227,7 @@ export const standalonePages = {
       "A customer portal helps make service information easier to access, review and manage across active buildings and support arrangements.",
       "Helix uses portal-led visibility to support clearer oversight across reporting, records and operational follow-up.",
     ],
-    image: "/hero-helix-security.png",
+    image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
     imageAlt: "Digital customer portal overview",
     metrics: [
       { value: "Visible", label: "Records and updates" },
@@ -1266,7 +1266,7 @@ export const standalonePages = {
       "Terms and conditions help define how services are provided, how work is scoped and what both parties can expect through the relationship.",
       "If you need a document-specific legal review, our team can direct you to the right contact.",
     ],
-    image: "/hero-helix-security.png",
+    image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
     imageAlt: "Terms and conditions overview",
     metrics: [
       { value: "Clear", label: "Service expectations" },
@@ -1299,7 +1299,7 @@ export const standalonePages = {
       "Privacy information explains how client and enquiry details are handled as part of the Helix service relationship.",
       "For any detailed privacy-related question, our team can help direct your enquiry appropriately.",
     ],
-    image: "/hero-helix-security.png",
+    image: "/images/002 - SECURITY SYSTEMS/002 - Intruder Alarm Systems/Home with external bellbox at twilight.png",
     imageAlt: "Privacy and data handling overview",
     metrics: [
       { value: "Respectful", label: "Information handling" },

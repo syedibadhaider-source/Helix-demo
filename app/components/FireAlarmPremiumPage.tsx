@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties } from "react";
 import { SiteHeader } from "./SiteHeader";
+import { SiteFooter } from "./SiteFooter";
 
 export type PremiumServiceTheme = {
   category: string;
@@ -199,75 +200,7 @@ function Icon({ name, className = "", style }: { name: string; className?: strin
   }
 }
 
-function PremiumFooter() {
-  return (
-    <footer className="bg-[#071A33] text-white">
-      <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8 lg:px-10 lg:py-16">
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_2fr]">
-          <div className="space-y-6">
-            <div className="flex items-start gap-5">
-              <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full bg-white p-3">
-                <Image src="/helix-logo.png" alt="Helix logo" fill className="object-contain p-2" />
-              </div>
-              <div>
-                <h2 className="text-lg font-extrabold">Helix Fire & Security Ltd.</h2>
-                <p className="mt-2 max-w-sm text-sm leading-6 text-white/70">
-                  29 Green Lane Road<br />
-                  Leicester<br />
-                  LE5 3TN
-                </p>
-                <p className="mt-3 text-sm text-white/70">VAT No: 27501564915</p>
-                <p className="text-sm text-white/70">Registration No: 2703471</p>
-              </div>
-            </div>
-
-            <div className="grid gap-3 text-sm text-white/80 sm:grid-cols-2">
-              <a href="tel:07359589933" className="flex items-center gap-3">
-                <Icon name="phone" className="h-4 w-4 text-[#EF2B2D]" />
-                07359 589933
-              </a>
-              <a href="mailto:hello@helixfiresecurity.com" className="flex items-center gap-3">
-                <Icon name="mail" className="h-4 w-4 text-[#EF2B2D]" />
-                hello@helixfiresecurity.com
-              </a>
-              <span className="flex items-center gap-3">
-                <Icon name="support" className="h-4 w-4 text-[#EF2B2D]" />
-                Customer Services
-              </span>
-              <span className="flex items-center gap-3">
-                <Icon name="clock" className="h-4 w-4 text-[#EF2B2D]" />
-                Open 24/7
-              </span>
-            </div>
-          </div>
-
-          <div className="grid gap-8 sm:grid-cols-3">
-            {footerColumns.map((column) => (
-              <div key={column.title}>
-                <h3 className="text-sm font-extrabold uppercase text-white/55">{column.title}</h3>
-                <div className="mt-5 flex flex-col gap-3 text-sm text-white/78">
-                  {column.links.map((link) => (
-                    <Link key={link.label} href={link.href} className="transition hover:text-[#EF2B2D]">
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-12 flex flex-col gap-4 border-t border-white/12 pt-6 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
-          <p>&copy; 2025 Helix Fire & Security Ltd. All rights reserved.</p>
-          <div className="flex gap-5">
-            <Link href="/terms" className="hover:text-white">Terms & Conditions</Link>
-            <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
+// PremiumFooter removed in favor of SiteFooter theme="dark"
 
 function getHeroImage(page: PremiumServicePageData, theme: PremiumServiceTheme) {
   if (page.heroImage) return page.heroImage;
@@ -453,7 +386,7 @@ export function PremiumServicePage({
         </section>
       </main>
 
-      <PremiumFooter />
+      <SiteFooter theme="dark" />
     </div>
   );
 }

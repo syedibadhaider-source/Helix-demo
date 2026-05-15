@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { footerColumns } from "../site-data";
 
-export function SiteFooter() {
+export function SiteFooter({ theme = "light" }: { theme?: "light" | "dark" }) {
   return (
-    <footer className="site-footer">
+    <footer className={`site-footer ${theme === "dark" ? "theme-dark" : "theme-light"}`}>
       <div className="footer-shell">
         <div className="footer-main-grid">
           {/* Left Column Card */}
@@ -43,7 +43,7 @@ export function SiteFooter() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <address className="not-italic">
+                  <address className={`not-italic ${theme === "dark" ? "!text-white" : "!text-[#0f172a]"} text-[15px] font-semibold tracking-[-0.2px] leading-relaxed`}>
                     29 Green Lane Road<br />
                     Leicester<br />
                     LE5 3TN

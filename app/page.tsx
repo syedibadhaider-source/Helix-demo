@@ -580,49 +580,59 @@ export default function Home() {
             </article>
 
             {/* Card 3: Values List (White) */}
-            <article className="mosaic-card mosaic-card-light col-span-1 md:col-span-2 lg:col-span-1 lg:row-span-2 shadow-sm transition-transform hover:-translate-y-1 flex flex-col min-h-[280px] !p-8 !bg-white !border !border-slate-200 relative overflow-hidden">
+            <article className="mosaic-card mosaic-card-light col-span-1 md:col-span-2 lg:col-span-1 lg:row-span-2 shadow-sm transition-transform hover:-translate-y-1 flex flex-col min-h-[280px] !bg-white !border !border-slate-200 relative overflow-hidden group">
+              {/* Image filling top empty space */}
+              <div className="relative w-full h-48 lg:h-56 overflow-hidden shrink-0">
+                <Image 
+                  src="/images/001 - FIRE SYSTEMS/001 - Fire Alarm Systems/Tech HQ and glass corridor 2.png" 
+                  alt="Helix corporate values" 
+                  fill 
+                  className="object-cover opacity-90 transition-transform duration-700 group-hover:scale-105" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/40 to-white" />
+              </div>
+
               {/* Decorative Background Elements */}
               <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-slate-50/50 rounded-full border border-slate-100/50 flex items-center justify-center pointer-events-none">
                 <div className="w-48 h-48 bg-white/50 rounded-full border border-slate-100/50 shadow-sm" />
               </div>
-              <div className="absolute top-10 -right-10 w-32 h-32 bg-red/5 rounded-full blur-3xl pointer-events-none" />
 
-              <div className="relative z-10 w-full flex flex-col h-full text-right">
-                <p className="mosaic-label !mb-10 uppercase tracking-wider text-slate-400">We act with:</p>
+              <div className="relative z-10 w-full flex flex-col h-full text-right px-8 pb-8 pt-4">
+                <p className="mosaic-label !mb-6 uppercase tracking-wider text-slate-500 font-bold">We act with:</p>
                 
-                <ul className="mosaic-list flex-1 flex flex-col justify-center space-y-12">
-                  <li className="!block !mb-0 w-full group">
+                <ul className="mosaic-list flex-1 flex flex-col justify-end space-y-8">
+                  <li className="!block !mb-0 w-full group/item">
                     <div className="flex items-center justify-end gap-4 w-full mb-1">
                       <div className="flex flex-col text-right">
-                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover:scale-105 transition-transform origin-right inline-block">Integrity</strong>
+                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:scale-105 transition-transform origin-right inline-block">Integrity</strong>
                         <span className="!text-slate-500 !font-medium !text-sm">doing what&apos;s right</span>
                       </div>
-                      <div className="w-12 h-12 rounded-2xl bg-red/5 flex items-center justify-center text-red shrink-0 shadow-sm border border-red/10">
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                      <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                       </div>
                     </div>
                   </li>
                   
-                  <li className="!block !mb-0 w-full group">
+                  <li className="!block !mb-0 w-full group/item">
                     <div className="flex items-center justify-end gap-4 w-full mb-1">
                       <div className="flex flex-col text-right">
-                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover:scale-105 transition-transform origin-right inline-block">Honesty</strong>
+                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:scale-105 transition-transform origin-right inline-block">Honesty</strong>
                         <span className="!text-slate-500 !font-medium !text-sm">fulfilling obligations</span>
                       </div>
-                      <div className="w-12 h-12 rounded-2xl bg-red/5 flex items-center justify-center text-red shrink-0 shadow-sm border border-red/10">
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
+                      <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
                       </div>
                     </div>
                   </li>
                   
-                  <li className="!block !mb-0 w-full group">
+                  <li className="!block !mb-0 w-full group/item">
                     <div className="flex items-center justify-end gap-4 w-full mb-1">
                       <div className="flex flex-col text-right">
-                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover:scale-105 transition-transform origin-right inline-block">Pride</strong>
+                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:scale-105 transition-transform origin-right inline-block">Pride</strong>
                         <span className="!text-slate-500 !font-medium !text-sm">nurturing long-term relationships</span>
                       </div>
-                      <div className="w-12 h-12 rounded-2xl bg-red/5 flex items-center justify-center text-red shrink-0 shadow-sm border border-red/10">
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                      <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                       </div>
                     </div>
                   </li>
@@ -631,15 +641,15 @@ export default function Home() {
             </article>
 
             {/* Card 4: Coverage Map */}
-            <article className="mosaic-card mosaic-card-map col-span-1 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 !bg-[#204159] !bg-none min-h-[280px] !p-8">
+            <article className="mosaic-card mosaic-card-map col-span-1 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 !bg-[#204159] !bg-none min-h-[280px] !p-8 flex flex-col justify-end">
               <div className="mosaic-map-blob mosaic-map-blob-top opacity-30" />
               <div className="mosaic-map-blob mosaic-map-blob-bottom opacity-30" />
-              <div className="mosaic-avatars" aria-hidden="true">
-                <span />
-                <span />
-                <span />
+              <div className="absolute top-8 right-8 flex">
+                <span className="w-10 h-10 -ml-2 rounded-full border-2 border-white/20 bg-gradient-to-br from-amber-200 to-slate-400" />
+                <span className="w-10 h-10 -ml-2 rounded-full border-2 border-white/20 bg-gradient-to-br from-amber-400 to-slate-600" />
+                <span className="w-10 h-10 -ml-2 rounded-full border-2 border-white/20 bg-gradient-to-br from-orange-200 to-slate-500" />
               </div>
-              <p className="!mt-24 !text-white !font-medium !text-lg leading-relaxed text-center">
+              <p className="!mt-24 !text-white !font-medium !text-lg leading-relaxed text-left z-10">
                 Our nationwide team of highly-trained technicians are our greatest assets,
                 providing the UK with world-class fire safety and security.
               </p>
@@ -647,8 +657,8 @@ export default function Home() {
 
             {/* Card 5: Support Notes */}
             <article className="mosaic-card mosaic-card-support col-span-1 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 flex flex-col justify-center min-h-[280px] !p-8">
-              <p className="mosaic-support-title !mt-0 !mb-8 uppercase tracking-wider !text-slate-300">We support our technicians through</p>
-              <div className="mosaic-support-notes !mt-0 gap-3">
+              <p className="mosaic-support-title !mt-0 !mb-8 uppercase tracking-wider !text-slate-300 text-left !ml-0 font-bold !max-w-full">We support our technicians through</p>
+              <div className="mosaic-support-notes !mt-0 gap-3 justify-start !ml-0">
                 <div className="shadow-lg !bg-[#1f3c55] !text-white !rotate-[-6deg] flex items-center justify-center">A team of Technical managers</div>
                 <div className="shadow-lg flex items-center justify-center">Experienced account handlers</div>
                 <div className="shadow-lg !rotate-[4deg] flex items-center justify-center">Designers and support staff</div>
@@ -656,9 +666,9 @@ export default function Home() {
             </article>
 
             {/* Card 6: Industry Experts */}
-            <article className="mosaic-card mosaic-card-expert col-span-1 md:col-span-2 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 !bg-[#e3ecda] flex flex-col items-center justify-center min-h-[280px] !p-8">
+            <article className="mosaic-card mosaic-card-expert col-span-1 md:col-span-2 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 !bg-[#e3ecda] flex flex-col items-start justify-center min-h-[280px] !p-8">
               <span className="mosaic-pill shadow-md tracking-wide font-bold">Industry Experts</span>
-              <p className="!text-slate-800 !text-xl md:!text-2xl mt-6 !max-w-[14ch] leading-tight font-medium">
+              <p className="!text-slate-800 !text-xl md:!text-2xl mt-6 !max-w-[20ch] leading-tight font-medium text-left">
                 Total adherence to legal fire safety, security responsibilities and compliance
               </p>
             </article>

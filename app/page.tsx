@@ -683,7 +683,7 @@ export default function Home() {
 
       <section className="closing-cta-section">
         <div className="closing-cta-shell">
-          <div className="closing-cta-visual bg-[url('/hero-helix-security.png')] bg-center bg-cover bg-no-repeat">
+          <div className="closing-cta-visual bg-[url('/helix-engineer-van.jpg')] bg-center bg-cover bg-no-repeat">
             {/* Background image visual - content removed as requested */}
           </div>
 

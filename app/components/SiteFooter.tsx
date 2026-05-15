@@ -22,7 +22,7 @@ export function SiteFooter() {
               <div className="footer-contact-info">
                 <div className="contact-row">
                   <span className="icon">📞</span>
-                  <a href="tel:03706084350">0370 608 4350</a>
+                  <a href="tel:07359589933">07359 589933</a>
                 </div>
                 <div className="contact-row">
                   <span className="icon">✉️</span>
@@ -31,6 +31,14 @@ export function SiteFooter() {
                 <div className="contact-row">
                   <span className="icon">🕒</span>
                   <span>Open: 24/7</span>
+                </div>
+                <div className="contact-row mt-4">
+                  <span className="icon">📍</span>
+                  <address className="not-italic !text-[#0f172a] text-[15px] font-semibold tracking-[-0.2px] leading-relaxed">
+                    29 Green Lane Road<br />
+                    Leicester<br />
+                    LE5 3TN
+                  </address>
                 </div>
               </div>
             </div>

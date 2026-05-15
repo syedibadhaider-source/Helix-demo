@@ -545,80 +545,93 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="value-mosaic-section">
-        <div className="value-mosaic-shell">
-          <p className="value-mosaic-kicker">What we value</p>
+      <section className="py-24 bg-slate-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="mb-16 md:mb-20 text-center">
+            <span className="inline-block py-1 px-3 rounded-full bg-red/10 text-red font-heading text-sm font-bold tracking-wider uppercase mb-4">
+              What We Value
+            </span>
+            <h2 className="text-4xl md:text-5xl font-heading font-extrabold text-navy">
+              Our Core Commitments
+            </h2>
+            <p className="mt-6 text-lg text-slate-600 max-w-2xl mx-auto">
+              We provide an unrivalled quality of service with confidence, driven by integrity, honesty, and an unwavering focus on our customers.
+            </p>
+          </div>
 
-          <div className="value-mosaic-grid">
-            <article className="mosaic-card mosaic-card-red">
-              <p>We are here for our customers</p>
-              <h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 auto-rows-[minmax(280px,auto)]">
+            
+            {/* Card 1: 24/7 (Red) */}
+            <article className="mosaic-card mosaic-card-red col-span-1 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 flex flex-col justify-center items-center min-h-[280px] !p-8">
+              <p className="uppercase tracking-widest !text-sm mb-4">We are here for our customers</p>
+              <h3 className="!mt-0">
                 <span>24 hrs</span>
                 <span>365 days</span>
               </h3>
             </article>
 
-            <article className="mosaic-card mosaic-card-photo">
-              <div className="mosaic-photo-overlay" />
-              <p>
+            {/* Card 2: Photo Card */}
+            <article className="mosaic-card mosaic-card-photo col-span-1 md:col-span-1 lg:col-span-2 shadow-sm transition-transform hover:-translate-y-1 group min-h-[280px] !p-8 flex flex-col justify-end">
+              <div className="mosaic-photo-overlay transition-colors group-hover:bg-black/20" />
+              <p className="!text-xl md:!text-2xl !max-w-lg !font-medium leading-snug">
                 We provide an unrivalled quality of service with confidence and we shape our
                 services according to our customer's needs.
               </p>
             </article>
 
-            <article className="mosaic-card mosaic-card-light">
-              <p className="mosaic-label">We act with:</p>
-              <ul className="mosaic-list">
-                <li>
-                  <strong>Integrity</strong>
-                  <span>doing what&apos;s right</span>
+            {/* Card 3: Values List (White) */}
+            <article className="mosaic-card mosaic-card-light col-span-1 md:col-span-2 lg:col-span-1 lg:row-span-2 shadow-sm transition-transform hover:-translate-y-1 flex flex-col min-h-[280px] !p-8 !bg-white !border !border-slate-200">
+              <p className="mosaic-label !mb-8 uppercase tracking-wider text-slate-500">We act with:</p>
+              <ul className="mosaic-list flex-1 flex flex-col justify-center space-y-10">
+                <li className="!block !mb-0">
+                  <strong className="!text-3xl block mb-2">Integrity</strong>
+                  <span className="!text-slate-600 !font-medium !text-base">doing what&apos;s right</span>
                 </li>
-                <li>
-                  <strong>Honesty</strong>
-                  <span>fulfilling obligations</span>
+                <li className="!block !mb-0">
+                  <strong className="!text-3xl block mb-2">Honesty</strong>
+                  <span className="!text-slate-600 !font-medium !text-base">fulfilling obligations</span>
                 </li>
-                <li>
-                  <strong>Pride</strong>
-                  <span>nurturing long-term relationships</span>
+                <li className="!block !mb-0">
+                  <strong className="!text-3xl block mb-2">Pride</strong>
+                  <span className="!text-slate-600 !font-medium !text-base">nurturing long-term relationships</span>
                 </li>
               </ul>
             </article>
 
-            <article className="mosaic-card mosaic-card-map">
-              <div className="mosaic-map-blob mosaic-map-blob-top" />
-              <div className="mosaic-map-blob mosaic-map-blob-bottom" />
+            {/* Card 4: Coverage Map */}
+            <article className="mosaic-card mosaic-card-map col-span-1 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 !bg-[#204159] !bg-none min-h-[280px] !p-8">
+              <div className="mosaic-map-blob mosaic-map-blob-top opacity-30" />
+              <div className="mosaic-map-blob mosaic-map-blob-bottom opacity-30" />
               <div className="mosaic-avatars" aria-hidden="true">
                 <span />
                 <span />
                 <span />
               </div>
-              <p>
+              <p className="!mt-24 !text-white !font-medium !text-lg leading-relaxed text-center">
                 Our nationwide team of highly-trained technicians are our greatest assets,
                 providing the UK with world-class fire safety and security.
               </p>
             </article>
 
-            <article className="mosaic-card mosaic-card-support">
-              <p className="mosaic-support-title">We support our technicians through</p>
-              <div className="mosaic-support-notes">
-                <div>A team of Technical managers</div>
-                <div>Experienced account handlers</div>
-                <div>Designers and support staff</div>
+            {/* Card 5: Support Notes */}
+            <article className="mosaic-card mosaic-card-support col-span-1 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 flex flex-col justify-center min-h-[280px] !p-8">
+              <p className="mosaic-support-title !mt-0 !mb-8 uppercase tracking-wider !text-slate-300">We support our technicians through</p>
+              <div className="mosaic-support-notes !mt-0 gap-3">
+                <div className="shadow-lg !bg-[#1f3c55] !text-white !rotate-[-6deg] flex items-center justify-center">A team of Technical managers</div>
+                <div className="shadow-lg flex items-center justify-center">Experienced account handlers</div>
+                <div className="shadow-lg !rotate-[4deg] flex items-center justify-center">Designers and support staff</div>
               </div>
             </article>
 
-            <article className="mosaic-card mosaic-card-expert">
-              <span className="mosaic-pill">Industry Experts</span>
-              <p>
+            {/* Card 6: Industry Experts */}
+            <article className="mosaic-card mosaic-card-expert col-span-1 md:col-span-2 lg:col-span-1 shadow-sm transition-transform hover:-translate-y-1 !bg-[#e3ecda] flex flex-col items-center justify-center min-h-[280px] !p-8">
+              <span className="mosaic-pill shadow-md tracking-wide font-bold">Industry Experts</span>
+              <p className="!text-slate-800 !text-xl md:!text-2xl mt-6 !max-w-[14ch] leading-tight font-medium">
                 Total adherence to legal fire safety, security responsibilities and compliance
               </p>
             </article>
-          </div>
 
-          <a className="value-mosaic-button" href="#resources">
-            Read all of our values
-            <span className="homepage-inline-arrow" aria-hidden="true" />
-          </a>
+          </div>
         </div>
       </section>
 

@@ -2,7 +2,7 @@ import { ContactForm } from "./ContactForm";
 
 export function ContactSection({ standalone = false }: { standalone?: boolean }) {
   return (
-    <section className={`contact-section${standalone ? " standalone" : ""}`} id="contact">
+    <section className={`contact-section${standalone ? " standalone pt-12 lg:pt-20" : ""}`} id="contact">
       <div className="contact-shell">
         <div className="contact-copy">
           <p className="service-page-eyebrow">Book now</p>

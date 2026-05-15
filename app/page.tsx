@@ -682,18 +682,18 @@ export default function Home() {
       <section className="closing-cta-section">
         <div className="closing-cta-shell">
           <div className="closing-cta-visual">
-            <div className="closing-cta-quote-card">
-              <blockquote>
+            <div className="closing-cta-quote-card !bg-transparent !shadow-none !p-0 md:!p-8">
+              <blockquote className="!text-slate-800 !text-xl md:!text-2xl !leading-relaxed !max-w-lg">
                 “Our confidence in your service delivery continues to grow... we now use Helix
                 Fire &amp; Security as the benchmark against our other contractors.”
               </blockquote>
 
-              <div className="closing-cta-quote-meta">
+              <div className="closing-cta-quote-meta !mt-8">
                 <div>
-                  <p>Ryan Jardine</p>
-                  <span>Senior Property Manager, Bupa UK</span>
+                  <p className="!text-navy !text-lg !font-bold">Ryan Jardine</p>
+                  <span className="!text-slate-600 !font-semibold">Senior Property Manager, Bupa UK</span>
                 </div>
-                <div className="closing-cta-logo">Bupa</div>
+                <div className="closing-cta-logo shadow-md">Bupa</div>
               </div>
             </div>
           </div>

@@ -2820,6 +2820,16 @@ a {
   background: #edf1ef;
 }
 
+.contact-section.standalone {
+  padding-top: 60px;
+}
+
+@media (min-width: 1024px) {
+  .contact-section.standalone {
+    padding-top: 100px;
+  }
+}
+
 .contact-shell {
   display: grid;
   grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);

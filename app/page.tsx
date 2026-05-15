@@ -580,22 +580,54 @@ export default function Home() {
             </article>
 
             {/* Card 3: Values List (White) */}
-            <article className="mosaic-card mosaic-card-light col-span-1 md:col-span-2 lg:col-span-1 lg:row-span-2 shadow-sm transition-transform hover:-translate-y-1 flex flex-col min-h-[280px] !p-8 !bg-white !border !border-slate-200">
-              <p className="mosaic-label !mb-8 uppercase tracking-wider text-slate-500">We act with:</p>
-              <ul className="mosaic-list flex-1 flex flex-col justify-center space-y-10">
-                <li className="!block !mb-0">
-                  <strong className="!text-3xl block mb-2">Integrity</strong>
-                  <span className="!text-slate-600 !font-medium !text-base">doing what&apos;s right</span>
-                </li>
-                <li className="!block !mb-0">
-                  <strong className="!text-3xl block mb-2">Honesty</strong>
-                  <span className="!text-slate-600 !font-medium !text-base">fulfilling obligations</span>
-                </li>
-                <li className="!block !mb-0">
-                  <strong className="!text-3xl block mb-2">Pride</strong>
-                  <span className="!text-slate-600 !font-medium !text-base">nurturing long-term relationships</span>
-                </li>
-              </ul>
+            <article className="mosaic-card mosaic-card-light col-span-1 md:col-span-2 lg:col-span-1 lg:row-span-2 shadow-sm transition-transform hover:-translate-y-1 flex flex-col min-h-[280px] !p-8 !bg-white !border !border-slate-200 relative overflow-hidden">
+              {/* Decorative Background Elements */}
+              <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-slate-50/50 rounded-full border border-slate-100/50 flex items-center justify-center pointer-events-none">
+                <div className="w-48 h-48 bg-white/50 rounded-full border border-slate-100/50 shadow-sm" />
+              </div>
+              <div className="absolute top-10 -right-10 w-32 h-32 bg-red/5 rounded-full blur-3xl pointer-events-none" />
+
+              <div className="relative z-10 w-full flex flex-col h-full text-right">
+                <p className="mosaic-label !mb-10 uppercase tracking-wider text-slate-400">We act with:</p>
+                
+                <ul className="mosaic-list flex-1 flex flex-col justify-center space-y-12">
+                  <li className="!block !mb-0 w-full group">
+                    <div className="flex items-center justify-end gap-4 w-full mb-1">
+                      <div className="flex flex-col text-right">
+                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover:scale-105 transition-transform origin-right inline-block">Integrity</strong>
+                        <span className="!text-slate-500 !font-medium !text-sm">doing what&apos;s right</span>
+                      </div>
+                      <div className="w-12 h-12 rounded-2xl bg-red/5 flex items-center justify-center text-red shrink-0 shadow-sm border border-red/10">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <li className="!block !mb-0 w-full group">
+                    <div className="flex items-center justify-end gap-4 w-full mb-1">
+                      <div className="flex flex-col text-right">
+                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover:scale-105 transition-transform origin-right inline-block">Honesty</strong>
+                        <span className="!text-slate-500 !font-medium !text-sm">fulfilling obligations</span>
+                      </div>
+                      <div className="w-12 h-12 rounded-2xl bg-red/5 flex items-center justify-center text-red shrink-0 shadow-sm border border-red/10">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
+                      </div>
+                    </div>
+                  </li>
+                  
+                  <li className="!block !mb-0 w-full group">
+                    <div className="flex items-center justify-end gap-4 w-full mb-1">
+                      <div className="flex flex-col text-right">
+                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover:scale-105 transition-transform origin-right inline-block">Pride</strong>
+                        <span className="!text-slate-500 !font-medium !text-sm">nurturing long-term relationships</span>
+                      </div>
+                      <div className="w-12 h-12 rounded-2xl bg-red/5 flex items-center justify-center text-red shrink-0 shadow-sm border border-red/10">
+                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </article>
 
             {/* Card 4: Coverage Map */}

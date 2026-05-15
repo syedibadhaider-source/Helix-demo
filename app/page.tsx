@@ -597,46 +597,48 @@ export default function Home() {
                 <div className="w-48 h-48 bg-white/50 rounded-full border border-slate-100/50 shadow-sm" />
               </div>
 
-              <div className="relative z-10 w-full flex flex-col h-full text-left px-8 pb-8 pt-4">
-                <p className="mosaic-label !mb-6 uppercase tracking-wider text-slate-500 font-bold !text-left !ml-0">We act with:</p>
-                
-                <ul className="mosaic-list flex-1 flex flex-col justify-end space-y-8">
-                  <li className="!block !mb-0 w-full group/item">
-                    <div className="flex items-center justify-start gap-4 w-full mb-1">
-                      <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-                      </div>
-                      <div className="flex flex-col items-start !text-left w-full">
-                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:translate-x-1 transition-transform origin-left inline-block !text-left">Integrity</strong>
-                        <span className="!text-slate-500 !font-medium !text-sm !text-left">doing what&apos;s right</span>
-                      </div>
-                    </div>
-                  </li>
+              <div className="relative z-10 w-full flex flex-col h-full px-8 pb-8 pt-4 lg:items-center">
+                <div className="w-full lg:w-fit flex flex-col h-full">
+                  <p className="mosaic-label !mb-6 uppercase tracking-wider text-slate-500 font-bold !text-left !ml-0">We act with:</p>
                   
-                  <li className="!block !mb-0 w-full group/item">
-                    <div className="flex items-center justify-start gap-4 w-full mb-1">
-                      <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
+                  <ul className="mosaic-list flex-1 flex flex-col justify-end lg:justify-center space-y-8">
+                    <li className="!block !mb-0 w-full group/item">
+                      <div className="flex items-center justify-start gap-4 w-full mb-1">
+                        <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
+                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                        </div>
+                        <div className="flex flex-col items-start !text-left w-full">
+                          <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:translate-x-1 transition-transform origin-left inline-block !text-left">Integrity</strong>
+                          <span className="!text-slate-500 !font-medium !text-sm !text-left">doing what&apos;s right</span>
+                        </div>
                       </div>
-                      <div className="flex flex-col items-start !text-left w-full">
-                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:translate-x-1 transition-transform origin-left inline-block !text-left">Honesty</strong>
-                        <span className="!text-slate-500 !font-medium !text-sm !text-left">fulfilling obligations</span>
+                    </li>
+                    
+                    <li className="!block !mb-0 w-full group/item">
+                      <div className="flex items-center justify-start gap-4 w-full mb-1">
+                        <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
+                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" /></svg>
+                        </div>
+                        <div className="flex flex-col items-start !text-left w-full">
+                          <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:translate-x-1 transition-transform origin-left inline-block !text-left">Honesty</strong>
+                          <span className="!text-slate-500 !font-medium !text-sm !text-left">fulfilling obligations</span>
+                        </div>
                       </div>
-                    </div>
-                  </li>
-                  
-                  <li className="!block !mb-0 w-full group/item">
-                    <div className="flex items-center justify-start gap-4 w-full mb-1">
-                      <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
-                        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                    </li>
+                    
+                    <li className="!block !mb-0 w-full group/item">
+                      <div className="flex items-center justify-start gap-4 w-full mb-1">
+                        <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-slate-700 shrink-0 shadow-sm border border-slate-200">
+                          <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                        </div>
+                        <div className="flex flex-col items-start !text-left w-full">
+                          <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:translate-x-1 transition-transform origin-left inline-block !text-left">Pride</strong>
+                          <span className="!text-slate-500 !font-medium !text-sm !text-left">nurturing long-term relationships</span>
+                        </div>
                       </div>
-                      <div className="flex flex-col items-start !text-left w-full">
-                        <strong className="!text-3xl lg:!text-4xl text-red leading-none mb-1 group-hover/item:translate-x-1 transition-transform origin-left inline-block !text-left">Pride</strong>
-                        <span className="!text-slate-500 !font-medium !text-sm !text-left">nurturing long-term relationships</span>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </article>
 

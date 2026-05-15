@@ -79,7 +79,7 @@ export function SiteFooter({ theme = "light" }: { theme?: "light" | "dark" }) {
           <div className="footer-copyright">
             <p>
               © {new Date().getFullYear()} Helix Fire & Security Ltd. All rights reserved. Designed by{" "}
-              <a href="https://www.owlisticstudio.com/" target="_blank" rel="noopener noreferrer" className="hover:text-red transition-colors">
+              <a href="https://www.owlisticstudio.com/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-4 hover:text-[#EF2B2D] transition-colors">
                 Owlistic Studio
               </a>.
             </p>

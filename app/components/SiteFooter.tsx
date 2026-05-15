@@ -35,20 +35,6 @@ export function SiteFooter() {
               </div>
             </div>
 
-            <div className="footer-address-block">
-              <p className="company-name">Helix Fire & Security Ltd.</p>
-              <p>Mayflower Close, Chandlers Ford SO53 4AR</p>
-              <div className="registration-info">
-                <p>VAT No: 275056495</p>
-                <p>Registration No: 2703471</p>
-              </div>
-            </div>
-
-            <div className="footer-social-pill">
-              <a href="#linkedin" aria-label="LinkedIn">in</a>
-              <a href="#facebook" aria-label="Facebook">f</a>
-              <a href="#x" aria-label="X">X</a>
-            </div>
           </div>
 
           {/* Right Link Columns */}

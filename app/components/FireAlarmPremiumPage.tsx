@@ -212,7 +212,9 @@ function PremiumFooter() {
               <div>
                 <h2 className="text-lg font-extrabold">Helix Fire & Security Ltd.</h2>
                 <p className="mt-2 max-w-sm text-sm leading-6 text-white/70">
-                  Mayflower Close, Chandlers Ford SO53 4AR
+                  29 Green Lane Road<br />
+                  Leicester<br />
+                  LE5 3TN
                 </p>
                 <p className="mt-3 text-sm text-white/70">VAT No: 27501564915</p>
                 <p className="text-sm text-white/70">Registration No: 2703471</p>
@@ -224,9 +226,9 @@ function PremiumFooter() {
                 <Icon name="phone" className="h-4 w-4 text-[#EF2B2D]" />
                 07359 589933
               </a>
-              <a href="mailto:info@helixfire.co.uk" className="flex items-center gap-3">
+              <a href="mailto:hello@helixfiresecurity.com" className="flex items-center gap-3">
                 <Icon name="mail" className="h-4 w-4 text-[#EF2B2D]" />
-                info@helixfire.co.uk
+                hello@helixfiresecurity.com
               </a>
               <span className="flex items-center gap-3">
                 <Icon name="support" className="h-4 w-4 text-[#EF2B2D]" />

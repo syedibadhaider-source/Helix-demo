@@ -220,9 +220,9 @@ function PremiumFooter() {
             </div>
 
             <div className="grid gap-3 text-sm text-white/80 sm:grid-cols-2">
-              <a href="tel:03706084350" className="flex items-center gap-3">
+              <a href="tel:07359589933" className="flex items-center gap-3">
                 <Icon name="phone" className="h-4 w-4 text-[#EF2B2D]" />
-                0370 608 4350
+                07359 589933
               </a>
               <a href="mailto:info@helixfire.co.uk" className="flex items-center gap-3">
                 <Icon name="mail" className="h-4 w-4 text-[#EF2B2D]" />
@@ -319,7 +319,7 @@ export function PremiumServicePage({
                   Request a Survey
                   <Icon name="arrow" className="h-4 w-4" />
                 </Link>
-                <a href="tel:03706084350" className="inline-flex items-center justify-center gap-3 rounded-lg border border-white/35 px-6 py-4 text-sm font-extrabold text-white transition hover:border-white hover:bg-white/10">
+                <a href="tel:07359589933" className="inline-flex items-center justify-center gap-3 rounded-lg border border-white/35 px-6 py-4 text-sm font-extrabold text-white transition hover:border-white hover:bg-white/10">
                   Book a Call
                   <Icon name="phone" className="h-4 w-4" />
                 </a>
@@ -442,9 +442,9 @@ export function PremiumServicePage({
                 {page.ctaButton}
                 <Icon name="arrow" className="h-4 w-4" />
               </Link>
-              <a href="tel:03706084350" className="inline-flex items-center justify-center gap-3 rounded-lg border border-white/35 px-6 py-4 text-sm font-extrabold text-white transition hover:bg-white/10">
+              <a href="tel:07359589933" className="inline-flex items-center justify-center gap-3 rounded-lg border border-white/35 px-6 py-4 text-sm font-extrabold text-white transition hover:bg-white/10">
                 <Icon name="phone" className="h-4 w-4" />
-                Call 0370 608 4350
+                Call 07359 589933
               </a>
             </div>
           </div>

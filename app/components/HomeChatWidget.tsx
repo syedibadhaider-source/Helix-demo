@@ -109,7 +109,7 @@ export function HomeChatWidget() {
           <div className="chat-widget-options compact">
             <a
               className="chat-widget-option"
-              href="https://wa.me/4403706084350?text=Hi%20Helix%2C%20I%20would%20like%20to%20book%20a%20survey."
+              href="https://wa.me/447359589933?text=Hi%20Helix%2C%20I%20would%20like%20to%20book%20a%20survey."
               target="_blank"
               rel="noreferrer"
             >

@@ -23,7 +23,7 @@ export function SiteHeader() {
       <div className="flex items-center gap-2 sm:gap-3 lg:hidden">
         <a
           className="flex items-center justify-center w-11 h-11 rounded-lg bg-[#1ca34a] text-white transition-transform hover:-translate-y-0.5"
-          href="https://wa.me/4403706084350?text=Hi%20Helix%2C%20I%20would%20like%20to%20book%20a%20survey."
+          href="https://wa.me/447359589933?text=Hi%20Helix%2C%20I%20would%20like%20to%20book%20a%20survey."
           target="_blank"
           rel="noreferrer"
           aria-label="Contact Helix via WhatsApp"
@@ -138,7 +138,7 @@ export function SiteHeader() {
           <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-3 lg:gap-[10px] w-full lg:w-auto mt-6 lg:mt-0 pb-4 lg:pb-0">
             <a
               className="hidden lg:inline-flex items-center justify-center gap-2 min-h-[44px] px-4 rounded-lg bg-[#1ca34a] text-white whitespace-nowrap font-heading text-[0.82rem] font-bold transition-transform hover:-translate-y-0.5"
-              href="https://wa.me/4403706084350?text=Hi%20Helix%2C%20I%20would%20like%20to%20book%20a%20survey."
+              href="https://wa.me/447359589933?text=Hi%20Helix%2C%20I%20would%20like%20to%20book%20a%20survey."
               target="_blank"
               rel="noreferrer"
               aria-label="Contact Helix via WhatsApp"
